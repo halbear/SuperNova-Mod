@@ -7,4 +7,4 @@ Developers: halbear1, Masterchefreal and Paladin
 Distribution:\
 -free to use in modpacks\
 -please do not reupload on sites other than curseforge and modrinth\
--free to use for content creation\
+-free to use for content creation
