@@ -17,8 +17,7 @@ public class ClientEventHandler {
     public static void init(final FMLClientSetupEvent event) { // block render types
         //cutout
             //place cutout blocks here
-                // an example would be
-                //RenderTypeLookup.setRenderLayer(ModBlocks.ExampleBlock.get(), RenderType.cutout());
+                RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getCutout());
         //cutoutmipped
             //place cutoutmipped here
                 // an example would be
