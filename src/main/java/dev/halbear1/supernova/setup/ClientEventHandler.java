@@ -14,10 +14,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
     @SubscribeEvent
-    public static void init(final FMLClientSetupEvent event) { // block render types
+    public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
+        //Solid
+            RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getSolid());
         //cutout
             //place cutout blocks here
-                RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getCutout());
+                //an example would be
+                //RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getCutout());
         //cutoutmipped
             //place cutoutmipped here
                 // an example would be
