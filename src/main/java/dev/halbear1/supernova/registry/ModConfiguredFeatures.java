@@ -1,4 +1,4 @@
 package dev.halbear1.supernova.registry;
 
-public class ModConfigFeatures {
+public class ModConfiguredFeatures {
 }
