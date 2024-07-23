@@ -1,0 +1,95 @@
+Metal Variations:
+ Ore: Mining
+ Ingot: Smelting
+ Rod  \
+ Sheet |> Pressing
+ Bar  /
+
+Piston (pressing) + Carborundum Block + Mould Block -> Pressed Item
+
+Mould Block: Brick + Carborundum + Steel
+
+Boiler:
+ Bucket of Salt Water -> Brine + Salt
+
+Condenser:
+ Cow/Human -> Liquid Methane
+ Leaf Block -> Liquid Oxygen
+
+Small Canister:
+ Steel + Glass
+
+Medium Cansiter:
+
+Large Canister:
+  
+
+Cable:
+ Wool + Copper Ingot 
+
+Heavy Duty Cable:
+ Wool +  + Copper Wire
+
+Pipe:
+ Glass
+
+Gas Pipe: For liquids that need high pressures
+ Glass + Steel
+
+Molten Pipe: For liquids
+
+Heavy Duty Pipe:
+
+Compressor: Puts liquids into containers
+
+
+Electrolysis Cell: Brick + Carborundum +  + Diamond
+ Brine -> Chlorine Gas
+ Water -> Hydrogen
+ Molten Rutile + Chlorine Gas -> Titanium Ingot
+ Molten Bauxite -> Aluminium Ingot
+
+Blast Furnace:
+ Silica + Coal -> Carborundum
+
+Electric Arc Furnace: Brick + Carborundum + Copper Ingot + Diamond
+ Aluminium Ingot + Copper Ingot -> Molten Grade 1 Alloy
+ Aluminium Ingot + Copper Ingot + Silicon -> Molten Grade 2 Alloy
+ Aluminium Ingot + Titanium Ingot + Iron Ore -> Molten Grade 3 Alloy
+ Silica + Coal -> Silicon
+ Otherwise Has Metal -> Lava/Slag
+ Otherwise Has Organic -> Charcoal
+ Iron + Coal -> Steel
+
+Electric Generator:
+ Charcoal/Coal -> Energy
+
+Electric Flywheel:
+ Copper Block + Steel Ingot + Copper Wire
+
+Electric Batteries:
+  
+
+Solar Panel:
+
+Solid Fuel Engine:
+ Sugar + 
+
+Liquid Fuel Engine:
+
+Rocket:
+ Engine Slot: Solid Fuel Engine / Liquid Fuel Engine
+ Fuel Slot: Methane / Hydrogen
+ Oxidiser Slot: Liquid Oxygen
+ 
+
+Tether Torch: Connecting oxygen supplies to players and lighting up areas
+ Aluminium Rod + 
+
+Silica: 
+ Break sand to get silica
+
+Rocket Assembly Bench: idk idk idk
+
+Rutile Rarity = Diamond
+Bauxite Rarity = Iron
