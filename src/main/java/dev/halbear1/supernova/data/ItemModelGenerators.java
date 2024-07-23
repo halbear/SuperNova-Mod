@@ -3,7 +3,9 @@ package dev.halbear1.supernova.data;
 import dev.halbear1.supernova.SuperNova;
 import dev.halbear1.supernova.registry.ModItems;
 import dev.halbear1.supernova.registry.ModItems;
+import javafx.css.Styleable;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -18,6 +20,8 @@ public class ItemModelGenerators extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+
 
     }
 }

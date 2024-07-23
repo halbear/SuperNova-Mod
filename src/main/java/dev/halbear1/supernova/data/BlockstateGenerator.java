@@ -15,6 +15,9 @@ public class BlockstateGenerator extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels(){
 
+        ResourceLocation bauxite_ore = modLoc("block/bauxite_ore");
+
+        simpleBlock(ModBlocks.BAUXITE_ORE.get());
     }
 
 }

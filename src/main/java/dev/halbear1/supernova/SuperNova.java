@@ -1,9 +1,13 @@
 package dev.halbear1.supernova;
 
+import dev.halbear1.supernova.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -27,8 +31,16 @@ public class SuperNova
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
+    public static final ItemGroup TAB = new ItemGroup(SuperNova.MOD_ID) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.BAUXITE_CHUNK.get());
+        }
+    };
+
     public SuperNova() {
-        // Register the setup method for modloading
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
@@ -39,14 +51,25 @@ public class SuperNova
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModBlocks.BLOCKS.register(bus);
+        ModItems.ITEMS.register(bus);
+        //ModEntityTypes.ENTITIES.register(bus);
+        //ModBiomes.BIOMES.register(bus);
+        //ModParticleTypes.PARTICLE_TYPES.register(bus);
+        //ModFeatures.FEATURES.register(bus);
+        //ModSurfaceBuilders.SURFACE_BUILDERS.register(bus);
+        //ModBiomes.registerBiomes();
+
+        bus.addListener(this::setup);
+
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    private void setup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(ModConfiguredFeatures::registerConfiguredFeatures);
     }
+
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
