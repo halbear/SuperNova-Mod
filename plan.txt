@@ -19,7 +19,7 @@ Condenser:
 Small Canister:
  Steel + Glass
 
-Medium Cansiter:
+Medium Canister:
 
 Large Canister:
   

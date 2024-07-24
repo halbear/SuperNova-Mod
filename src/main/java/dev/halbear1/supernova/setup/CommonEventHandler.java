@@ -8,10 +8,9 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class CommonEventHandler {
-
     @SubscribeEvent
-    public static void biomeModification(BiomeLoadingEvent event){ // this will add features such as ore to the overworld
-        event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.BAXUITE_ORE_GEN);
+    public static void biomeModification(BiomeLoadingEvent event) { // this will add features such as ore to the overworld
+        event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.BAUXITE_ORE_GEN);
+        event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.RUTILE_ORE_GEN);
     }
-
 }

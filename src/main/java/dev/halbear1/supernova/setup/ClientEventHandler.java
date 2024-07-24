@@ -8,27 +8,35 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import java.util.ArrayList;
+import net.minecraft.block.Block;
+import java.util.Arrays;
+import java.util.List;
 
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
+    @SafeVarargs
+    public static void SetCollectionRenderType(RenderType type, RegistryObject<Block>... blocks_list) {
+        for (RegistryObject<Block> blockRegistryObject : blocks_list) {
+            RenderTypeLookup.setRenderLayer(blockRegistryObject.get(), type);
+        }
+    }
     @SubscribeEvent
     public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
-        //Solid
+        // pal: drying up your code
+        SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
+                ModBlocks.BAUXITE_ORE,
+                ModBlocks.RUTILE_ORE // pal: rutile!
+        );
+        /*SetCollectionRenderType(RenderType.getCutoutMipped(), // Cutout Mipped: Cutout but with mipmapping. Textures from far away are simplified for performance.
 
-        //cutout
-            //place cutout blocks here
-                //an example would be
-                RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getCutout());
-        //cutoutmipped
-            //place cutoutmipped here
-                // an example would be
-                //RenderTypeLookup.setRenderLayer(ModBlocks.ExampleBlock.get(), RenderType.cutout_mipped());
-        //translucent
-            //place translucent blocks here(i.e. glass)
-                // an example would be
-                //RenderTypeLookup.setRenderLayer(ModBlocks.ExampleBlock.get(), RenderType.translucent());
+        );
+        SetCollectionRenderType(RenderType.getTranslucent(), // Translucent: Texture pixels with a transparency element are mixed, slowest method.
+
+        );*/
     }
 
     /*@SubscribeEvent

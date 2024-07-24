@@ -18,9 +18,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, SuperNova.MOD_ID);
 
 
+
     //overworld
     public static final RegistryObject<Block> BAUXITE_ORE =
             registerBlock("bauxite_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE).harvestLevel(2)));
+    public static final RegistryObject<Block> RUTILE_ORE =
+            registerBlock("rutile_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_ORE).harvestLevel(1))); //pal: tf is a harvest level?
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = ModBlocks.BLOCKS.register(name, block);
@@ -36,5 +39,4 @@ public class ModBlocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
-
 }
