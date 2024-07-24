@@ -29,7 +29,8 @@ public class ClientEventHandler {
         // pal: drying up your code
         SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
                 ModBlocks.BAUXITE_ORE,
-                ModBlocks.RUTILE_ORE // pal: rutile!
+                ModBlocks.RUTILE_ORE, // pal: rutile, generator
+                ModBlocks.ELECTRIC_GENERATOR
         );
         /*SetCollectionRenderType(RenderType.getCutoutMipped(), // Cutout Mipped: Cutout but with mipmapping. Textures from far away are simplified for performance.
 
