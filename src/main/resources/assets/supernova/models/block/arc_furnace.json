@@ -1,0 +1,23 @@
+
+{
+  "comment": "never again am i doing this manually - hal",
+"parent": "block/block",
+  "textures": {
+    "all": "supernova:block/electric_arc_furnace",
+    "particle": "block/stone"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "up": {"uv": [4, 0, 8, 5.33333], "texture": "#all", "cullface": "up" },
+        "down": {"uv": [4, 10.66667, 8, 16], "texture": "#all", "cullface": "down" },
+        "north": {"uv": [4, 5.33333, 8, 10.66667], "texture": "#all", "cullface": "north" },
+        "east": {"uv": [8, 5.33333, 12, 10.66667], "texture": "#all", "cullface": "east" },
+        "south": {"uv": [12, 5.33333, 16, 10.66667], "texture": "#all", "cullface": "south" },
+        "west": {"uv": [0, 5.33333, 4, 10.66667], "texture": "#all", "cullface": "west" }
+      }
+    }
+    ]
+}

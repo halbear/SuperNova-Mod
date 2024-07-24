@@ -2,19 +2,14 @@ package dev.halbear1.supernova.setup;
 
 import  dev.halbear1.supernova.SuperNova;
 import  dev.halbear1.supernova.registry.ModBlocks;
-import  net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import java.util.ArrayList;
 import net.minecraft.block.Block;
-import java.util.Arrays;
-import java.util.List;
 
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
@@ -30,13 +25,16 @@ public class ClientEventHandler {
         SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
                 ModBlocks.BAUXITE_ORE,
                 ModBlocks.RUTILE_ORE, // pal: rutile, generator
-                ModBlocks.ELECTRIC_GENERATOR
+                ModBlocks.ARC_FURNACE
+                //blocks here
         );
+
         /*SetCollectionRenderType(RenderType.getCutoutMipped(), // Cutout Mipped: Cutout but with mipmapping. Textures from far away are simplified for performance.
-
+                //blocks here
         );
-        SetCollectionRenderType(RenderType.getTranslucent(), // Translucent: Texture pixels with a transparency element are mixed, slowest method.
 
+        SetCollectionRenderType(RenderType.getTranslucent(), // Translucent: Texture pixels with a transparency element are mixed, slowest method.
+                //blocks here
         );*/
     }
 

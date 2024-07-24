@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "": [
-      {
-        "model": "supernova:block/electric_generator", "weight": 7
-      }
-    ]
-  }
-}

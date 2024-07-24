@@ -2,7 +2,10 @@
   "variants": {
     "": [
       {
-        "model": "supernova:block/rutile_ore", "weight": 7
+        "model": "supernova:block/rutile_ore"
+      },
+      {
+        "model": "supernova:block/rutile_ore", "y": 180, "x": 180, "z": 180
       }
     ]
   }

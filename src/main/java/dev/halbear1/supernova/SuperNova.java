@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(SuperNova.MOD_ID)
-public class SuperNova
+public class SuperNova // to chef and pal, no touchy
 {
     // string for the 'supernova' mod ID, this string will be used A LOT throughout the project to avoid retyping this variable
     public static final String MOD_ID = "supernova";
@@ -32,11 +32,11 @@ public class SuperNova
     private static final Logger LOGGER = LogManager.getLogger();
 
     public SuperNova() {
-
+        //creates a mod event bus
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ModItems.register(bus);
-        ModBlocks.register(bus);
+        //register the mod elements on the mod event bus (loads them)
+        ModBlocks.BLOCKS.register(bus);
+        ModItems.ITEMS.register(bus);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

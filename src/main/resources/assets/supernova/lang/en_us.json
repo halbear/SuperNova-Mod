@@ -1,5 +1,11 @@
 {
   "item.supernova.bauxite_chunk": "Bauxite Chunk",
+  "item.supernova.rutile_chunk": "Rutile Chunk",
+
   "block.supernova.bauxite_ore": "Bauxite Ore",
-  "itemGroup.supernovaModTab": "SuperNova"
+  "block.supernova.rutile_ore": "Rutile Ore",
+  "block.supernova.arc_furnace": "Electric Arc Furnace",
+
+  "itemGroup.supernovaBlocksModTab": "SuperNova Blocks",
+  "itemGroup.supernovaItemsModTab": "SuperNova Items"
 }

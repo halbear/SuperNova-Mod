@@ -15,7 +15,7 @@ import net.minecraft.world.gen.placement.Placement;
 public class ModConfiguredFeatures {
     //pal: 'bauxite' not 'baxuite'
     public static final ConfiguredFeature<?,?> BAUXITE_ORE_GEN = Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.BAUXITE_ORE.get().getDefaultState(), 12)).range(32).square().count(12);
-    public static final ConfiguredFeature<?,?> RUTILE_ORE_GEN = Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.RUTILE_ORE.get().getDefaultState(), 12)).range(32).square().count(12);
+    public static final ConfiguredFeature<?,?> RUTILE_ORE_GEN = Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.RUTILE_ORE.get().getDefaultState(), 6)).range(16).square().count(7);
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC,?> register(String name, ConfiguredFeature<FC,?> feature){
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation(SuperNova.MOD_ID, name), feature);

@@ -4,7 +4,7 @@
     "textures": {
       "textureoverlay": "supernova:block/bauxite_ore"
     },
-    "model": "supernova:block/bauxite_ore_universal",
+    "model": "supernova:block/ore_universal",
     "uvlock": true
   },
   "variants": {

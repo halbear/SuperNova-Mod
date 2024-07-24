@@ -6,7 +6,13 @@ import net.minecraft.item.ItemStack;
 
 public class ItemGroups {
 
-    public static final ItemGroup SUPERNOVA_TAB = new ItemGroup("supernovaModTab") {
+    public static final ItemGroup SUPERNOVA_BLOCKS_TAB = new ItemGroup("supernovaBlocksModTab") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.BAUXITE_CHUNK.get());
+        }
+    };
+    public static final ItemGroup SUPERNOVA_ITEMS_TAB = new ItemGroup("supernovaItemsModTab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.BAUXITE_CHUNK.get());
