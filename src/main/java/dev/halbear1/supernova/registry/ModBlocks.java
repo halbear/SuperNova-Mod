@@ -25,6 +25,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUTILE_ORE =
             registerBlock("rutile_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_ORE).harvestLevel(1))); //pal: tf is a harvest level?
 
+    public static final RegistryObject<Block> ELECTRIC_GENERATOR =
+            registerBlock("electric_generator", () -> new Block(AbstractBlock.Properties.from(Blocks.BLAST_FURNACE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = ModBlocks.BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
