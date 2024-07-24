@@ -16,11 +16,11 @@ public class ClientEventHandler {
     @SubscribeEvent
     public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
         //Solid
-            RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getSolid());
+
         //cutout
             //place cutout blocks here
                 //an example would be
-                //RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getCutout());
+                RenderTypeLookup.setRenderLayer(ModBlocks.BAUXITE_ORE.get(), RenderType.getCutout());
         //cutoutmipped
             //place cutoutmipped here
                 // an example would be
@@ -31,9 +31,9 @@ public class ClientEventHandler {
                 //RenderTypeLookup.setRenderLayer(ModBlocks.ExampleBlock.get(), RenderType.translucent());
     }
 
-    @SubscribeEvent
+    /*@SubscribeEvent
     public static void registerFactory(ParticleFactoryRegisterEvent event){
         //register particles here, an example would be:
         //Minecraft.GetInstance().particleEngine.register(ModParticleTypes.ExampleParticle.get(), ExampleParticle.Factory::new);
-    }
+    }*/
 }

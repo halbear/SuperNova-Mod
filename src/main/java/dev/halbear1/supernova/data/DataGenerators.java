@@ -1,7 +1,7 @@
 package dev.halbear1.supernova.data;
 
+import dev.halbear1.supernova.SuperNova;
 import net.minecraft.data.DataGenerator;
-import  dev.halbear1.supernova.SuperNova;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
@@ -10,9 +10,9 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 public class DataGenerators {
 
     @SubscribeEvent
-    public  static  void GatherData(GatherDataEvent event){
+    public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
-        generator.addProvider(new BlockstateGenerator(generator, event.getExistingFileHelper()));
-        generator.addProvider(new ItemModelGenerators(generator, event.getExistingFileHelper()));
+        //generator.addProvider(new BlockstateGenerator(generator, event.getExistingFileHelper()));
+        //generator.addProvider(new ItemModelGenerator(generator, event.getExistingFileHelper()));
     }
 }

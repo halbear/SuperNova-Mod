@@ -14,13 +14,13 @@ import net.minecraft.world.gen.placement.Placement;
 
 public class ModConfiguredFeatures {
 
-    public static final ConfiguredFeature<?,?> BAXUITE_ORE = Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.BAUXITE_ORE.get().getDefaultState(), 8)).range(16).square().count(8);
+    public static final ConfiguredFeature<?,?> BAXUITE_ORE_GEN = Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.BAUXITE_ORE.get().getDefaultState(), 12)).range(32).square().count(12);
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC,?> register(String name, ConfiguredFeature<FC,?> feature){
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation(SuperNova.MOD_ID, name), feature);
     }
 
     public static void registerConfiguredFeatures() {
-        register("bauxite_ore",BAXUITE_ORE);
+       register("bauxite_ore_gen",BAXUITE_ORE_GEN);
     }
 }

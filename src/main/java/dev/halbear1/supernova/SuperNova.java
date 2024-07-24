@@ -31,15 +31,12 @@ public class SuperNova
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static final ItemGroup TAB = new ItemGroup(SuperNova.MOD_ID) {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(ModItems.BAUXITE_CHUNK.get());
-        }
-    };
-
     public SuperNova() {
+
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(bus);
+        ModBlocks.register(bus);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -49,11 +46,6 @@ public class SuperNova
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
-
-        ModBlocks.BLOCKS.register(bus);
-        ModItems.ITEMS.register(bus);
         //ModEntityTypes.ENTITIES.register(bus);
         //ModBiomes.BIOMES.register(bus);
         //ModParticleTypes.PARTICLE_TYPES.register(bus);
