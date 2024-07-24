@@ -7,10 +7,12 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.Properties;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -19,17 +21,37 @@ public class ModBlocks {
 
     //Overworld
     public static final RegistryObject<Block> BAUXITE_ORE =
-            registerBlock("bauxite_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)
-                    .harvestLevel(2)));
+            registerBlock("bauxite_ore", () -> new Block(AbstractBlock.Properties
+                    .create(Material.ROCK)
+                    .sound(SoundType.STONE)
+                    .hardnessAndResistance(3.0f, 3.0f)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    )
+            );
 
     public static final RegistryObject<Block> RUTILE_ORE =
-            registerBlock("rutile_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_ORE)
-                    .harvestLevel(3))); //pal: tf is a harvest level? hal: pickaxe level required to get drops, 1 is stone, 2 is iron etc...
+            registerBlock("rutile_ore", () -> new Block(AbstractBlock.Properties
+                    .create(Material.ROCK)
+                    .sound(SoundType.STONE)
+                    .hardnessAndResistance(3.0f, 3.0f)
+                    .harvestLevel(3)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    )//pal: tf is a harvest level? hal: pickaxe level required to get drops, 1 is stone, 2 is iron etc...
+            );
 
 
     //Technology
     public static final RegistryObject<Block> ARC_FURNACE =
-            registerBlock("arc_furnace", () -> new ArcFurnace(AbstractBlock.Properties.create(Material.IRON)));
+            registerBlock("arc_furnace", () -> new ArcFurnace(AbstractBlock.Properties
+                        .create(Material.IRON)
+                        .hardnessAndResistance(3.0f,3.0f)
+                        .harvestTool(ToolType.PICKAXE)
+                        .sound(SoundType.METAL)
+                    )
+            );
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = ModBlocks.BLOCKS.register(name, block);

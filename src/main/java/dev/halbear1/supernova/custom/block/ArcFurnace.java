@@ -1,10 +1,12 @@
 package dev.halbear1.supernova.custom.block;
 
 import net.minecraft.block.*;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraftforge.common.ToolType;
 
 import javax.annotation.Nullable;
 
@@ -14,6 +16,7 @@ public class ArcFurnace extends HorizontalBlock{
 
     public ArcFurnace(Properties builder){
             super(builder);
+
     }
 
     @Override
