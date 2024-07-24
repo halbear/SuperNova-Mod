@@ -2,7 +2,7 @@
   "textures": {
     "particle": "block/stone",
     "all": "block/stone",
-    "overlay": "supernova:block/electric_generator"
+    "overlay": "supernova:block/simple_block"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],
