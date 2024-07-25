@@ -4,16 +4,16 @@
     {
       "rolls": {
         "min": 1,
-        "max": 8
+        "max": 4
       },
       "bonus_rolls": {
         "min": 0,
-        "max": 5
+        "max": 2
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "supernova:bauxite_chunk"
+          "name": "supernova:copper_chunk"
         }
       ]
     }

@@ -19,7 +19,11 @@ public class ModBlocks { //hal
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SuperNova.MOD_ID);
 
+    //the blocks will appear in inventory as in order of declaration here, please keep all block types grouped together
+    // such as group overworld/organic together, group technology blocks together, keep it relatively organised - hal
+
     //Overworld
+        //ores
     public static final RegistryObject<Block> BAUXITE_ORE = //hal
             registerBlock("bauxite_ore", () -> new Block(AbstractBlock.Properties
                     .create(Material.ROCK)
@@ -50,9 +54,8 @@ public class ModBlocks { //hal
                             .harvestLevel(1)
                             .harvestTool(ToolType.PICKAXE)
                             .setRequiresTool()
-                    )//pal: tf is a harvest level? hal: pickaxe level required to get drops, 1 is stone, 2 is iron etc...
+                    )
             );
-
 
     //Technology
     public static final RegistryObject<Block> ARC_FURNACE = //hal & pal

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "supernova:copper_chunk"
+  },
+  "result": "supernova:copper_ingot",
+  "experience": 0.3,
+  "cookingtime": 160
+}

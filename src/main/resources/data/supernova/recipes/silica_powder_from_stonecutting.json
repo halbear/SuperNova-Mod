@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "supernova:silica_crystal"
+  },
+  "result": "supernova:silica_powder",
+  "count": 1
+}
