@@ -14,7 +14,7 @@ import net.minecraft.block.Block;
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
     @SafeVarargs
-    public static void SetCollectionRenderType(RenderType type, RegistryObject<Block>... blocks_list) {
+    public static void SetCollectionRenderType(RenderType type, RegistryObject<Block>... blocks_list) { //hal
         for (RegistryObject<Block> blockRegistryObject : blocks_list) {
             RenderTypeLookup.setRenderLayer(blockRegistryObject.get(), type);
         }
@@ -23,9 +23,10 @@ public class ClientEventHandler {
     public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
         // pal: drying up your code
         SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
-                ModBlocks.BAUXITE_ORE,
+                ModBlocks.BAUXITE_ORE, //hal
                 ModBlocks.RUTILE_ORE, // pal: rutile, generator
-                ModBlocks.ARC_FURNACE
+                ModBlocks.ARC_FURNACE,
+                ModBlocks.COPPER_ORE
                 //blocks here
         );
 

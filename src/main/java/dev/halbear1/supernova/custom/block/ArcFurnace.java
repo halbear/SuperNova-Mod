@@ -16,13 +16,13 @@ public class ArcFurnace extends HorizontalBlock{
 
     public ArcFurnace(Properties builder){
             super(builder);
-
     }
 
     @Override
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder){
         builder.add(HORIZONTAL_FACING);
     }
+
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context){

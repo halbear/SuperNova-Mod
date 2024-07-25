@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    "supernova:silica_from_sand",
+    "supernova:silica_powder_from_quartz_block",
+    "supernova:silica_powder_from_smooth_quartz"
+  ]
+}

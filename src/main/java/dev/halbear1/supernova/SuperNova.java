@@ -24,14 +24,14 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(SuperNova.MOD_ID)
-public class SuperNova // to chef and pal, no touchy
+public class SuperNova // to chef, peaceful and pal, no touchy
 {
     // string for the 'supernova' mod ID, this string will be used A LOT throughout the project to avoid retyping this variable
     public static final String MOD_ID = "supernova";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public SuperNova() {
+    public SuperNova() { //hal
         //creates a mod event bus
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         //register the mod elements on the mod event bus (loads them)

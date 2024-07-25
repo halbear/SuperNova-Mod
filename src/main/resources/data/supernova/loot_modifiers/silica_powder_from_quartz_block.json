@@ -1,0 +1,13 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:quartz_block"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.03
+    }
+  ],
+  "addition": "supernova:silica_powder"
+}

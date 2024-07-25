@@ -5,7 +5,31 @@
         "model": "supernova:block/rutile_ore"
       },
       {
-        "model": "supernova:block/rutile_ore", "y": 180, "x": 180, "z": 180
+        "model": "supernova:block/ore/rutile/rutile_ore", "y": 180, "x": 180, "z": 180
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore1"
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore1", "y": 180, "x": 180, "z": 180
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore2"
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore2", "y": 180, "x": 180, "z": 180
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore3"
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore3", "y": 180, "x": 180, "z": 180
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore4"
+      },
+      {
+        "model": "supernova:block/ore/rutile/rutile_ore4", "y": 180, "x": 180, "z": 180
       }
     ]
   }

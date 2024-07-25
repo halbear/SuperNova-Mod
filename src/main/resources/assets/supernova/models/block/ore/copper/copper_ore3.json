@@ -2,7 +2,7 @@
   "textures": {
     "particle": "block/stone",
     "all": "block/stone",
-    "overlay": "supernova:block/bauxite_ore1"
+    "overlay": "supernova:block/ore/copper/copper_ore3"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],

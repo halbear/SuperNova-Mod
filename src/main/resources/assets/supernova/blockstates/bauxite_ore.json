@@ -2,22 +2,22 @@
   "variants": {
     "": [
       {
-        "model": "supernova:block/bauxite_ore", "weight": 7
+        "model": "supernova:block/ore/bauxite/bauxite_ore", "weight": 7
       },
       {
-        "model": "supernova:block/bauxite_ore", "y": 180,"x": 180, "z": 180, "weight": 3
+        "model": "supernova:block/ore/bauxite/bauxite_ore", "y": 180,"x": 180, "z": 180, "weight": 3
       },
       {
-        "model": "supernova:block/bauxite_ore_variant1", "weight": 6
+        "model": "supernova:block/ore/bauxite/bauxite_ore_variant1", "weight": 6
       },
       {
-        "model": "supernova:block/bauxite_ore_variant1", "y": 180,"x": 180, "z": 180, "weight": 5
+        "model": "supernova:block/ore/bauxite/bauxite_ore_variant1", "y": 180,"x": 180, "z": 180, "weight": 5
       },
       {
-        "model": "supernova:block/bauxite_ore_variant2", "weight": 9
+        "model": "supernova:block/ore/bauxite/bauxite_ore_variant2", "weight": 9
       },
       {
-        "model": "supernova:block/bauxite_ore_variant2", "y": 180,"x": 180, "z": 180, "weight": 7
+        "model": "supernova:block/ore/bauxite/bauxite_ore_variant2", "y": 180,"x": 180, "z": 180, "weight": 7
       }
     ]
   }

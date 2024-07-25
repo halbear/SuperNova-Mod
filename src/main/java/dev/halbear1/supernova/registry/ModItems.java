@@ -18,4 +18,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUTILE_CHUNK = ITEMS.register("rutile_chunk", // pal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+
+    public static final RegistryObject<Item> SILICA_CRYSTAL = ITEMS.register("silica_crystal", // hal
+            () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+
+    public static final RegistryObject<Item> SILICA_POWDER = ITEMS.register("silica_powder", // hal
+            () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 }

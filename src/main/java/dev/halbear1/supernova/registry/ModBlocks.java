@@ -15,12 +15,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.Properties;
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class ModBlocks { //hal
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SuperNova.MOD_ID);
 
     //Overworld
-    public static final RegistryObject<Block> BAUXITE_ORE =
+    public static final RegistryObject<Block> BAUXITE_ORE = //hal
             registerBlock("bauxite_ore", () -> new Block(AbstractBlock.Properties
                     .create(Material.ROCK)
                     .sound(SoundType.STONE)
@@ -31,7 +31,7 @@ public class ModBlocks {
                     )
             );
 
-    public static final RegistryObject<Block> RUTILE_ORE =
+    public static final RegistryObject<Block> RUTILE_ORE = //hal & pal
             registerBlock("rutile_ore", () -> new Block(AbstractBlock.Properties
                     .create(Material.ROCK)
                     .sound(SoundType.STONE)
@@ -42,9 +42,20 @@ public class ModBlocks {
                     )//pal: tf is a harvest level? hal: pickaxe level required to get drops, 1 is stone, 2 is iron etc...
             );
 
+    public static final RegistryObject<Block> COPPER_ORE = //hal & pal
+            registerBlock("copper_ore", () -> new Block(AbstractBlock.Properties
+                            .create(Material.ROCK)
+                            .sound(SoundType.STONE)
+                            .hardnessAndResistance(3.0f, 3.0f)
+                            .harvestLevel(1)
+                            .harvestTool(ToolType.PICKAXE)
+                            .setRequiresTool()
+                    )//pal: tf is a harvest level? hal: pickaxe level required to get drops, 1 is stone, 2 is iron etc...
+            );
+
 
     //Technology
-    public static final RegistryObject<Block> ARC_FURNACE =
+    public static final RegistryObject<Block> ARC_FURNACE = //hal & pal
             registerBlock("arc_furnace", () -> new ArcFurnace(AbstractBlock.Properties
                         .create(Material.IRON)
                         .hardnessAndResistance(3.0f,3.0f)
@@ -53,13 +64,13 @@ public class ModBlocks {
                     )
             );
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){ //hal
         RegistryObject<T> toReturn = ModBlocks.BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) { //hal
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().group(ItemGroups.SUPERNOVA_BLOCKS_TAB)));
     }
