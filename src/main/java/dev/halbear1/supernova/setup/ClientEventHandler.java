@@ -22,10 +22,14 @@ public class ClientEventHandler {
     @SubscribeEvent
     public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
         // pal: drying up your code
+        SetCollectionRenderType(RenderType.getSolid(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
+                ModBlocks.ARC_FURNACE
+                //blocks here
+        );
+
         SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
                 ModBlocks.BAUXITE_ORE, //hal
                 ModBlocks.RUTILE_ORE, // pal: rutile, generator
-                ModBlocks.ARC_FURNACE,
                 ModBlocks.COPPER_ORE
                 //blocks here
         );
