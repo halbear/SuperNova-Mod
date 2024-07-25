@@ -23,11 +23,13 @@ run
 *.ase
 *.aseprite
 *.psd
+aseprite
+ArtWorkSource
 
 # Files from Forge MDK
 forge*changelog.txt
 
 # source artwork files
-Promotional Artwork Source
-SupernovaAssetsSource
+
+
 
