@@ -2,7 +2,7 @@
 
 A mod by Iron Horse Game Development
 
-Developers: halbear1, Masterchefreal and Paladin
+Developers: halbear1, Masterchefreal and Paladin, peacefulgamer
 
 Distribution:\
 -free to use in modpacks\
