@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "supernova:silica_powder"
+  },
+  "result": "supernova:carborundum",
+  "experience": 25,
+  "cookingtime": 600
+}

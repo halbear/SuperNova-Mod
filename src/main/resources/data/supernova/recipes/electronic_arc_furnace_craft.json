@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CcC",
+    "cdc",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bricks"
+    },
+    "c": {
+      "item": "supernova:carborundum"
+    },
+    "C": {
+      "item": "minecraft:copper"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    }
+
+  },
+  "result": {
+    "item": "supernova:arc_furnace"
+  }
+}
