@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "supernova:copper_ore"
+  },
+  "result": "supernova:copper_ingot",
+  "experience": 0.3,
+  "cookingtime": 120
+}
