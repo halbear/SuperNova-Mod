@@ -3,7 +3,7 @@
   "comment": "never again am i doing this manually - hal",
 "parent": "block/block",
   "textures": {
-    "all": "supernova:block/electric_arc_furnace",
+    "all": "supernova:block/electric_arc_furnace1",
     "particle": "block/stone"
   },
   "elements": [
