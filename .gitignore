@@ -20,6 +20,9 @@ build
 # other
 eclipse
 run
+*.ase
+*.aseprite
+*.psd
 
 # Files from Forge MDK
 forge*changelog.txt
