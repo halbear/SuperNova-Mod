@@ -9,6 +9,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
+  "parent": "supernova:supernova_parent",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
