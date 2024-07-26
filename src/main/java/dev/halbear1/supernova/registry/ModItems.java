@@ -24,6 +24,7 @@ public class ModItems {
 //the items will appear in inventory as in order of declaration here, please keep all item types grouped together
 //such as group ores together, group crystal+powdered forms together, keep it relatively organised in both the registry AND the en_us.json - hal
 
+    //REMEMBER TO PUT REGISTERED ITEMS AND BLOCKS IN THE EN_US.JSON, an example would be ""block.supernova.bauxite_ore": "Bauxite Ore","
     //ores
     public static final RegistryObject<Item> BAUXITE_CHUNK = ITEMS.register("bauxite_chunk", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)){

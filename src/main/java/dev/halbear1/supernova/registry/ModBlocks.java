@@ -22,6 +22,8 @@ public class ModBlocks { //hal
 //the blocks will appear in inventory as in order of declaration here, please keep all block types grouped together
 //such as group ores together, group organic materials together, keep it relatively organised in both the registry AND the en_us.json - hal
 
+    //REMEMBER TO PUT REGISTERED ITEMS AND BLOCKS IN THE EN_US.JSON, an example would be ""block.supernova.bauxite_ore": "Bauxite Ore","
+
     //Overworld
         //ores
     public static final RegistryObject<Block> BAUXITE_ORE = //hal
