@@ -9,6 +9,7 @@
   "item.supernova.silica_crystal": "Silica Crystal",
   "item.supernova.silica_powder": "Powdered Silica",
   "item.supernova.carborundum": "Carborundum",
+  "item.supernova.anatase_chunk": "Anatase Chunk",
 
   "block.supernova.bauxite_ore": "Bauxite Ore",
   "block.supernova.rutile_ore": "Rutile Ore",
@@ -16,6 +17,7 @@
   "block.supernova.bauxite_block": "Block Of Bauxite",
   "block.supernova.arc_furnace": "§eElectric Arc Furnace§r",
   "block.supernova.steel_pipe": "Steel Pipe",
+  "block.supernova.anatase_ore": "Anatase Ore",
 
   "itemGroup.supernovaBlocksModTab": "SuperNova Blocks",
   "itemGroup.supernovaItemsModTab": "SuperNova Items",
@@ -25,5 +27,6 @@
   "tooltip.supernova.rutile_tooltip": "Melt this down to make §eMolten Rutile§r using the §eElectric Arc Furnace §r \n §eMolten Rutile§r is used to make §eTitanium!§r through an §eElectrolysis Cell§r with §eChlorine Gas§r",
   "tooltip.supernova.copperchunk_tooltip": "Smelt this into a §eCopper Ingot§r using any §eVanilla Furnace§r \n§eCopper Ingot§r is used to craft §eMolten Grade 1 Alloy§r and §eMolten Grade 2 Alloy§r \n§eCopper Block§r is used to craft an§e Electric Fly Wheel§r",
   "tooltip.supernova.silicachunk_tooltip": "Grind into §eSilica Powder§r using a §eVanilla Stonecutter§r \n §eSilica Powder§r is used to make §eSilicon§r and §eCarborundum§r",
-  "tooltip.supernova.silicapowder_tooltip": "Burn in an §eElectric Arc Furnace §r with coal to make §eSilicon§r \n Blast using a §eVanilla Blast Furnace§r to create §eCarborundum§r"
+  "tooltip.supernova.silicapowder_tooltip": "Burn in an §eElectric Arc Furnace §r with coal to make §eSilicon§r \n Blast using a §eVanilla Blast Furnace§r to create §eCarborundum§r",
+  "tooltip.supernova.steel_pipe_tooltip": "Pipe type: Liquids"
 }

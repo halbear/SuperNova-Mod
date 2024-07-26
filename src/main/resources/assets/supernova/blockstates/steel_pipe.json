@@ -15,6 +15,14 @@
     "facing=west": {
       "model": "supernova:block/steel_pipe",
       "y": 270
+    },
+    "facing=up": {
+      "model": "supernova:block/steel_pipe",
+      "x": 90
+    },
+    "facing=down": {
+      "model": "supernova:block/steel_pipe",
+      "x": 270
     }
   }
 }
