@@ -31,7 +31,8 @@ public class ClientEventHandler {
         SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
                 ModBlocks.BAUXITE_ORE, //hal
                 ModBlocks.RUTILE_ORE, // pal: rutile, generator
-                ModBlocks.COPPER_ORE
+                ModBlocks.COPPER_ORE,
+                ModBlocks.ANATASE_ORE
                 //blocks here
         );
 

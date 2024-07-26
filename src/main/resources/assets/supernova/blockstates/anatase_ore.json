@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore", "weight": 7
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore", "y": 180,"x": 180, "z": 180, "weight": 3
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore1", "weight": 5
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore1", "y": 180,"x": 180, "z": 180, "weight": 2
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore2", "weight": 9
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore2", "y": 180,"x": 180, "z": 180, "weight": 5
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore3", "weight": 9
+      },
+      {
+        "model": "supernova:block/ore/anatase/anatase_ore3", "y": 180,"x": 180, "z": 180, "weight": 4
+      }
+    ]
+  }
+}

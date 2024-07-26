@@ -13,6 +13,7 @@ public class CommonEventHandler {
         event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.BAUXITE_ORE_GEN);
         event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.RUTILE_ORE_GEN);
         event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.COPPER_ORE_GEN);
+        event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.ANATASE_ORE_GEN);
 
     }
 }

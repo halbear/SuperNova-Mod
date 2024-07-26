@@ -59,6 +59,16 @@ public class ModBlocks { //hal
                             .setRequiresTool()
                     )
             );
+    public static final RegistryObject<Block> ANATASE_ORE = //hal & pal
+            registerBlock("anatase_ore", () -> new Block(AbstractBlock.Properties
+                            .create(Material.ROCK)
+                            .sound(SoundType.STONE)
+                            .hardnessAndResistance(3.0f, 3.0f)
+                            .harvestLevel(3)
+                            .harvestTool(ToolType.PICKAXE)
+                            .setRequiresTool()
+                    )
+            );
 
     // Block of x
     public static final RegistryObject<Block> BAUXITE_BLOCK = //hal
