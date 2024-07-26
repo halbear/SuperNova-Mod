@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:bauxite_chunk"
+    },
+    "title": "Rock Collector",
+    "description": "Obtain all the Raw Metals",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:supernova_parent",
+  "criteria":  {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:copper_chunk"
+          },
+          {
+            "item": "supernova:bauxite_chunk"
+          },
+          {
+            "item": "supernova:rutile_chunk"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}
+
+
