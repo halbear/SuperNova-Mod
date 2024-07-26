@@ -59,6 +59,17 @@ public class ModItems {
                     }
                 }});
 
+    public static final RegistryObject<Item> ANATASE_CHUNK = ITEMS.register("anatase_chunk", // hal
+            () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)){
+                @Override
+                public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+                    if (Screen.hasShiftDown()){
+                        tooltip.add(new TranslationTextComponent("tooltip.supernova.copperchunk_tooltip"));
+                    } else{
+                        tooltip.add(new TranslationTextComponent("tooltip.supernova.tooltip_prompt"));
+                    }
+                }});
+
     //crystals
     public static final RegistryObject<Item> SILICA_CRYSTAL = ITEMS.register("silica_crystal", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)){
