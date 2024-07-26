@@ -90,7 +90,7 @@ public class ModBlocks { //hal
                     )
             );
 
-    public static final RegistryObject<Block> STEEL_PIPE = //hal & pal
+    public static final RegistryObject<Block> STEEL_PIPE = //hal
             registerBlock("steel_pipe", () -> new StraightSteelPipe(AbstractBlock.Properties
                             .create(Material.IRON)
                             .hardnessAndResistance(3.0f,3.0f)
