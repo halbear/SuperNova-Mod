@@ -13,7 +13,6 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.Properties;
 import java.util.function.Supplier;
 
 public class ModBlocks { //hal
@@ -90,6 +89,8 @@ public class ModBlocks { //hal
                             .notSolid()
                     )
             );
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){ //hal
         RegistryObject<T> toReturn = ModBlocks.BLOCKS.register(name, block);

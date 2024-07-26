@@ -2,14 +2,14 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "supernova:block/pipe_texture",
-		"particle": "supernova:block/pipe_texture"
+		"0": "supernova:block/Pipe_texture",
+		"particle": "supernova:block/Pipe_texture"
 	},
 	"elements": [
 		{
-			"from": [4, 3, 0],
-			"to": [12, 11, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"from": [4, 5, 0],
+			"to": [12, 13, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 8, 0]},
 			"faces": {
 				"north": {"uv": [4, 8, 8, 12], "texture": "#0"},
 				"east": {"uv": [0, 0, 8, 4], "texture": "#0"},
@@ -20,11 +20,46 @@
 			}
 		}
 	],
-	"display": {},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [59, 52, 19],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [59, 52, 19],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [4, 93, -19],
+			"translation": [-1.25, 0, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"firstperson_lefthand": {
+			"rotation": [4, 93, -19],
+			"translation": [-1.25, 0, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, 46, 161],
+			"translation": [-0.25, -0.5, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"head": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 12, 0]
+		},
+		"fixed": {
+			"rotation": [8, 70, 150],
+			"scale": [0.7, 0.7, 0.7]
+		}
+	},
 	"groups": [
 		{
-			"name": "pipe",
-			"origin": [7, 6, 0],
+			"name": "VoxelShapes",
+			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [0]
 		}

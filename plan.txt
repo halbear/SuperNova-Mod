@@ -30,8 +30,8 @@ Cable:
 Heavy Duty Cable:
  Wool +  + Copper Wire
 
-Pipe:
- Glass
+water_Pipe:
+ Aluminium
 
 Gas Pipe: For liquids that need high pressures
  Glass + Steel
@@ -84,9 +84,9 @@ Rocket:
  
 
 Tether Torch: Connecting oxygen supplies to players and lighting up areas
- Aluminium Rod + 
+ Aluminium Rod +
 
-Silica: 
+Silica:
  Break sand to get silica
 
 Rocket Assembly Bench: idk idk idk
