@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:copper_chunk"
+    },
+    "title": "Gather copper!",
+    "description": "First steps towards the stars...",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:copper_chunk"
+          }
+        ]
+      }
+    }
+  }
+}
