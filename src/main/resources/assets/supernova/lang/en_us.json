@@ -4,6 +4,7 @@
   "item.supernova.copper_chunk": "Raw Copper Chunk",
   "item.supernova.copper_ingot": "Copper Ingot",
   "item.supernova.aluminium_ingot": "Aluminium Ingot",
+  "item.supernova.titanium_ingot": "Titanium Ingot",
   "item.supernova.steel_ingot": "steel Ingot",
   "item.supernova.silica_crystal": "Silica Crystal",
   "item.supernova.silica_powder": "Powdered Silica",
@@ -12,6 +13,7 @@
   "block.supernova.bauxite_ore": "Bauxite Ore",
   "block.supernova.rutile_ore": "Rutile Ore",
   "block.supernova.copper_ore": "Copper Ore",
+  "block.supernova.bauxite_block": "Block Of Bauxite",
   "block.supernova.arc_furnace": "§eElectric Arc Furnace§r",
 
   "itemGroup.supernovaBlocksModTab": "SuperNova Blocks",

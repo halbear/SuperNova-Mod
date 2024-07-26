@@ -21,7 +21,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = // hal
             DeferredRegister.create(ForgeRegistries.ITEMS, SuperNova.MOD_ID);
 
-//the items will appear in inventory as in order of declaration in the en_us.json, please keep all item types grouped together
+//the items will appear in inventory as in order of declaration here, please keep all item types grouped together
 //such as group ores together, group crystal+powdered forms together, keep it relatively organised in both the registry AND the en_us.json - hal
 
     //ores
@@ -86,9 +86,12 @@ public class ModItems {
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
     public static final RegistryObject<Item> ALUMINIUM_INGOT = ITEMS.register("aluminium_ingot", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+    public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", // hal
+            () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
+    //whatever carborundum is
     public static final RegistryObject<Item> CARBORUNDUM = ITEMS.register("carborundum", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 

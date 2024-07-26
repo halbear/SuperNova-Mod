@@ -19,7 +19,7 @@ public class ModBlocks { //hal
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SuperNova.MOD_ID);
 
-//the blocks will appear in inventory as in order of declaration in the en_us.json, please keep all block types grouped together
+//the blocks will appear in inventory as in order of declaration here, please keep all block types grouped together
 //such as group ores together, group organic materials together, keep it relatively organised in both the registry AND the en_us.json - hal
 
     //Overworld
@@ -54,6 +54,16 @@ public class ModBlocks { //hal
                             .harvestLevel(1)
                             .harvestTool(ToolType.PICKAXE)
                             .setRequiresTool()
+                    )
+            );
+
+    // Block of x
+    public static final RegistryObject<Block> BAUXITE_BLOCK = //hal
+            registerBlock("bauxite_block", () -> new Block(AbstractBlock.Properties
+                            .create(Material.ROCK)
+                            .sound(SoundType.STONE)
+                            .hardnessAndResistance(2.0f, 1.0f)
+                            .harvestTool(ToolType.PICKAXE)
                     )
             );
 

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "supernova:block/bauxite_block", "weight": 5
+      },
+      {
+        "model": "supernova:block/bauxite_block1", "weight": 3
+      },
+      {
+        "model": "supernova:block/bauxite_block2", ",weight": 2
+      }
+    ]
+  }
+}

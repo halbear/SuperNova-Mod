@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "supernova:bauxite_chunk"
+    }
+  },
+  "result": {
+    "item": "supernova:bauxite_block"
+  }
+}
