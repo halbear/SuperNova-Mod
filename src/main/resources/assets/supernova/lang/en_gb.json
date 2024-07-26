@@ -3,7 +3,7 @@
   "item.supernova.rutile_chunk": "Rutile Chunk",
   "item.supernova.copper_chunk": "Raw Copper Chunk",
   "item.supernova.copper_ingot": "Copper Ingot",
-  "item.supernova.aluminium_ingot": "Aluminum Ingot",
+  "item.supernova.aluminium_ingot": "Aluminium Ingot",
   "item.supernova.titanium_ingot": "Titanium Ingot",
   "item.supernova.steel_ingot": "steel Ingot",
   "item.supernova.silica_crystal": "Silica Crystal",
@@ -20,7 +20,7 @@
   "itemGroup.supernovaItemsModTab": "SuperNova Items",
 
   "tooltip.supernova.tooltip_prompt": "Hold \u00A7eSHIFT\u00A7r to see what this is used for",
-  "tooltip.supernova.bauxite_tooltip": "Melt this down to make \u00A7eMolten Bauxite\u00A7r using the §eElectric Arc Furnace §r \n \u00A7eMolten Bauxite\u00A7r is used to make §eAluminum!§r through an \u00A7eElectrolysis Cell\u00A7r",
+  "tooltip.supernova.bauxite_tooltip": "Melt this down to make \u00A7eMolten Bauxite\u00A7r using the §eElectric Arc Furnace §r \n \u00A7eMolten Bauxite\u00A7r is used to make §eAluminium!§r through an \u00A7eElectrolysis Cell\u00A7r",
   "tooltip.supernova.rutile_tooltip": "Melt this down to make §eMolten Rutile§r using the §eElectric Arc Furnace §r \n §eMolten Rutile§r is used to make §eTitanium!§r through an §eElectrolysis Cell§r with §eChlorine Gas§r",
   "tooltip.supernova.copperchunk_tooltip": "Smelt this into a §eCopper Ingot§r using any §eVanilla Furnace§r \n§eCopper Ingot§r is used to craft §eMolten Grade 1 Alloy§r and §eMolten Grade 2 Alloy§r \n§eCopper Block§r is used to craft an§e Electric Fly Wheel§r",
   "tooltip.supernova.silicachunk_tooltip": "Grind into §eSilica Powder§r using a §eVanilla Stonecutter§r \n §eSilica Powder§r is used to make §eSilicon§r and §eCarborundum§r",

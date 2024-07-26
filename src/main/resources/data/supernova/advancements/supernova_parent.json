@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:arc_furnace"
+    },
+    "title": "Supernova!",
+    "description": "Thank you for downloading Supernova",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:aluminium_ingot"
+    },
+    "title": "Ohhhh Shiny!",
+    "description": "Obtain all the alloys",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:supernova_parent",
+  "criteria":  {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:steel_ingot"
+          },
+          {
+            "item": "supernova:steel_ingot"
+          },
+          {
+            "item": "supernova:steel_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}
+
+
