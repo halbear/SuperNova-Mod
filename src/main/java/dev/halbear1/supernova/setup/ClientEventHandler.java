@@ -23,7 +23,8 @@ public class ClientEventHandler {
     public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
         // pal: drying up your code
         SetCollectionRenderType(RenderType.getSolid(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
-                ModBlocks.ARC_FURNACE
+                ModBlocks.ARC_FURNACE,
+                ModBlocks.STEEL_PIPE
                 //blocks here
         );
 

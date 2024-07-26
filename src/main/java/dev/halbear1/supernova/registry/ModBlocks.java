@@ -3,6 +3,7 @@ package dev.halbear1.supernova.registry;
 import dev.halbear1.supernova.SuperNova;
 
 import dev.halbear1.supernova.custom.block.ArcFurnace;
+import dev.halbear1.supernova.custom.block.HorizontalRotationalDecorBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -76,6 +77,17 @@ public class ModBlocks { //hal
                         .hardnessAndResistance(3.0f,3.0f)
                         .harvestTool(ToolType.PICKAXE)
                         .sound(SoundType.METAL)
+                    )
+            );
+
+    public static final RegistryObject<Block> STEEL_PIPE = //hal & pal
+            registerBlock("steel_pipe", () -> new HorizontalRotationalDecorBlock(AbstractBlock.Properties
+                            .create(Material.IRON)
+                            .hardnessAndResistance(3.0f,3.0f)
+                            .harvestTool(ToolType.PICKAXE)
+                            .sound(SoundType.METAL)
+                            .setRequiresTool()
+                            .notSolid()
                     )
             );
 

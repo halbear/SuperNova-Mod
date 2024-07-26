@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "supernova:block/steel_pipe",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "supernova:block/steel_pipe",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "supernova:block/steel_pipe",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "supernova:block/steel_pipe",
+      "y": 270
+    }
+  }
+}
