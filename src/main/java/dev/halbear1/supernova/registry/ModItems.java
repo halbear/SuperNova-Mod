@@ -104,13 +104,16 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
-    //buckets
-    public static final RegistryObject<Item> SALT_WATER_BUCKET = ITEMS.register("salt_water_bucket",()-> new BucketItem(()-> ModFluids.SALT_WATER_FLUID.get(),
-            new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
     //whatever carborundum is
     public static final RegistryObject<Item> CARBORUNDUM = ITEMS.register("carborundum", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+
+    //buckets
+    public static final RegistryObject<Item> SALT_WATER_BUCKET = ITEMS.register("salt_water_bucket",()-> new BucketItem(()-> ModFluids.SALT_WATER_FLUID.get(),
+            new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+    public static final RegistryObject<Item> CRUDE_OIL_BUCKET = ITEMS.register("crude_oil_bucket",()-> new BucketItem(()-> ModFluids.CRUDE_OIL_FLUID.get(),
+            new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
 
 }

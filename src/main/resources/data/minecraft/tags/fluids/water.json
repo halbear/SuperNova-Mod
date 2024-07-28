@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "supernova:salt_water_flowing",
+    "supernova:salt_water_fluid",
+    "supernova:crude_oil_flowing",
+    "supernova:crude_oil_fluid"
+  ]
+}
