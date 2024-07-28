@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "supernova:block/simple_block"
+    }
+  }
+}
