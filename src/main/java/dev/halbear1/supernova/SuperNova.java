@@ -37,6 +37,7 @@ public class SuperNova // to chef, peaceful and pal, no touchy
         //register the mod elements on the mod event bus (loads them)
         ModBlocks.BLOCKS.register(bus);
         ModItems.ITEMS.register(bus);
+        ModFluids.FLUIDS.register(bus);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

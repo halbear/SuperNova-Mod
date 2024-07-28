@@ -9,7 +9,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "supernova:supernova_parent",
+  "parent": "supernova:obtain_all_raw",
   "criteria":  {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

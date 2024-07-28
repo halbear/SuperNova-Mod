@@ -2,6 +2,7 @@ package dev.halbear1.supernova.setup;
 
 import  dev.halbear1.supernova.SuperNova;
 import  dev.halbear1.supernova.registry.ModBlocks;
+import dev.halbear1.supernova.registry.ModFluids;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,13 +37,19 @@ public class ClientEventHandler {
                 //blocks here
         );
 
+        RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_FLUID.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_FLOWING.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_BLOCK.get(), RenderType.getTranslucent());
+
         /*SetCollectionRenderType(RenderType.getCutoutMipped(), // Cutout Mipped: Cutout but with mipmapping. Textures from far away are simplified for performance.
                 //blocks here
         );
 
+
         SetCollectionRenderType(RenderType.getTranslucent(), // Translucent: Texture pixels with a transparency element are mixed, slowest method.
-                //blocks here
+            //blocks here
         );*/
+
     }
 
     /*@SubscribeEvent

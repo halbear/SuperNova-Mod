@@ -5,6 +5,7 @@
     },
     "title": "Supernova!",
     "description": "Thank you for downloading Supernova",
+    "background": "supernova:textures/advancementbg.png",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

@@ -3,6 +3,7 @@ package dev.halbear1.supernova.registry;
 import dev.halbear1.supernova.SuperNova;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
@@ -102,6 +103,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+
+    //buckets
+    public static final RegistryObject<Item> SALT_WATER_BUCKET = ITEMS.register("salt_water_bucket",()-> new BucketItem(()-> ModFluids.SALT_WATER_FLUID.get(),
+            new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
     //whatever carborundum is
     public static final RegistryObject<Item> CARBORUNDUM = ITEMS.register("carborundum", // hal
