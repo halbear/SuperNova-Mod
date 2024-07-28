@@ -30,5 +30,6 @@
   "tooltip.supernova.copperchunk_tooltip": "Smelt this into a §eCopper Ingot§r using any §eVanilla Furnace§r \n§eCopper Ingot§r is used to craft §eMolten Grade 1 Alloy§r and §eMolten Grade 2 Alloy§r \n§eCopper Block§r is used to craft an§e Electric Fly Wheel§r",
   "tooltip.supernova.silicachunk_tooltip": "Grind into §eSilica Powder§r using a §eVanilla Stonecutter§r \n §eSilica Powder§r is used to make §eSilicon§r and §eCarborundum§r",
   "tooltip.supernova.silicapowder_tooltip": "Burn in an §eElectric Arc Furnace §r with coal to make §eSilicon§r \n Blast using a §eVanilla Blast Furnace§r to create §eCarborundum§r",
-  "tooltip.supernova.steel_pipe_tooltip": "Pipe type: Liquids"
+  "tooltip.supernova.steel_pipe_tooltip": "Pipe type: Liquids",
+  "tooltip.supernova.anatasechunk_tooltip": "Melt this down to make §eMolten anatase§r using the §eElectric Arc Furnace §r \n §eMolten anatase§r is used to make §eTitanium!§r through an §eElectrolysis Cell§r with §eChlorine Gas§r"
 }

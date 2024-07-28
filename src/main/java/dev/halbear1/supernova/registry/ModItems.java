@@ -65,7 +65,7 @@ public class ModItems {
                 @Override
                 public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
                     if (Screen.hasShiftDown()){
-                        tooltip.add(new TranslationTextComponent("tooltip.supernova.copperchunk_tooltip"));
+                        tooltip.add(new TranslationTextComponent("tooltip.supernova.anatasechunk_tooltip"));
                     } else{
                         tooltip.add(new TranslationTextComponent("tooltip.supernova.tooltip_prompt"));
                     }
