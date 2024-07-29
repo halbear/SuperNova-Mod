@@ -10,6 +10,7 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.world.Dimension;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
@@ -28,6 +29,14 @@ public class DebugPortalBlock extends Block {
                         if (OverWorld != null){
                             player.changeDimension(OverWorld, new DebugTeleporter(blockPos, true));
                         }
+                        player.setNoGravity(false);
+                    }
+                    if (worldin.getDimensionKey() == World.OVERWORLD){
+                        ServerWorld OverWorld = server.getWorld(ModDimensions.SPACE);
+                        if (OverWorld != null){
+                            player.changeDimension(OverWorld, new DebugTeleporter(blockPos, true));
+                        }
+                        player.setNoGravity(true);
                     }
                     return ActionResultType.SUCCESS;
                 }

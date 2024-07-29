@@ -43,23 +43,12 @@ public class DebugTeleporter implements ITeleporter {
                     break;
                 }
                 if (doSetBlock) {
-                    DestinationWorld.setBlockState(DestinationPos.down(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
+                    //DestinationWorld.setBlockState(DestinationPos.down(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
                     DestinationWorld.setBlockState(DestinationPos.down().east(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.down().east(1), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.down().east(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.down().west(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.east(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.west(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up().east(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up().west(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(1).east(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(1).west(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(2).east(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(2).west(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(3).west(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(3).east(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(3).east(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(3), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
+                    DestinationWorld.setBlockState(DestinationPos.down().west(1), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
+                    DestinationWorld.setBlockState(DestinationPos.up(2), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
+                    DestinationWorld.setBlockState(DestinationPos, ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
+                    DestinationWorld.setBlockState(DestinationPos.up(1), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
                 }
             }
 

@@ -2,9 +2,11 @@ package dev.halbear1.supernova.registry;
 
 import dev.halbear1.supernova.*;
 import dev.halbear1.supernova.loot_modifiers.ModReplaceLootDrop;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
