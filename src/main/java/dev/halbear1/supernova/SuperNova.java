@@ -47,6 +47,12 @@ public class SuperNova // to chef, peaceful and pal, no touchy
         ModBlocks.BLOCKS.register(bus);
         ModItems.ITEMS.register(bus);
         ModFluids.FLUIDS.register(bus);
+        //ModEntities.ENTITIES.register(bus);
+        //ModBiomes.BIOMES.register(bus);
+        //ModParticles.PARTICLE_TYPES.register(bus);
+        //ModFeatures.FEATURES.register(bus);
+        //ModSurfaceBuilders.SURFACE_BUILDERS.register(bus);
+        //ModBiomes.registerBiomes();
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -55,13 +61,6 @@ public class SuperNova // to chef, peaceful and pal, no touchy
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
-        //ModEntityTypes.ENTITIES.register(bus);
-        //ModBiomes.BIOMES.register(bus);
-        //ModParticleTypes.PARTICLE_TYPES.register(bus);
-        //ModFeatures.FEATURES.register(bus);
-        //ModSurfaceBuilders.SURFACE_BUILDERS.register(bus);
-        //ModBiomes.registerBiomes();
 
         bus.addListener(this::setup);
 
