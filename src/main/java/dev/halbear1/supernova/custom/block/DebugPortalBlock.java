@@ -52,7 +52,7 @@ public class DebugPortalBlock extends Block {
             }
             player.setNoGravity(false);
         }
-        if (worldin.getDimensionKey() == World.OVERWORLD) {
+        if (worldin.getDimensionKey() != ModDimensions.SPACE) {
             ServerWorld OverWorld = server.getWorld(ModDimensions.SPACE);
             if (OverWorld != null) {
                 player.changeDimension(OverWorld, new DebugTeleporter(blockPos, true));
