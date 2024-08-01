@@ -33,6 +33,7 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluidBlock> SALT_WATER_BLOCK = ModBlocks.BLOCKS.register("salt_water",
             () -> new FlowingFluidBlock(() -> ModFluids.SALT_WATER_FLUID.get(), AbstractBlock.Properties.create(Material.WATER)
                     .doesNotBlockMovement().hardnessAndResistance(100f).noDrops()));
+
     //Oil
     public static final RegistryObject<FlowingFluid> CRUDE_OIL_FLUID = FLUIDS.register("crude_oil_fluid",
             () -> new ForgeFlowingFluid.Source(ModFluids.CRUDE_OIL_PROPERTIES));
