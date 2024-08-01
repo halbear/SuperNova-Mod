@@ -39,7 +39,6 @@ public class DebugPortalBlock extends Block {
                     }
                 }
             }
-
         }
         return super.onBlockActivated(bstate, worldin, blockPos, player, handIn, hit);
     }
