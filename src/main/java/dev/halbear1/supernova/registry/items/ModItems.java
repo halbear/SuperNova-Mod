@@ -119,5 +119,5 @@ public class ModItems {
     //music disks
     public static final RegistryObject<Item> NEW_WORLD_MD = ITEMS.register("new_world_md",
             ()-> new MusicDiscItem(1, () -> ModSoundEvents.NEW_WORLD.get(),
-                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
 }

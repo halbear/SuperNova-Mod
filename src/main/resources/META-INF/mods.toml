@@ -29,9 +29,9 @@ displayName="SuperNova" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="SuperNova.png" #optional
 # A text field displayed in the mod UI
-credits="Iron Horse Game Development" #optional
+credits="halbear1, Masterchefreal, TechyKnight, Peacefulgamer_, Billz_Game" #optional
 # A text field displayed in the mod UI
-authors="halbear1, Masterchefreal, TechyKnight" #optional
+authors="halbear1" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 SuperNova Space travel mod developed by Iron Horse Game Development (visit https://iron-horse.games/ to find out more)

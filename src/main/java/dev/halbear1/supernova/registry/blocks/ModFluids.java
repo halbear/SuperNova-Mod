@@ -28,7 +28,7 @@ public class ModFluids {
             () -> new ForgeFlowingFluid.Flowing(ModFluids.SALT_WATER_PROPERTIES));
     public static final ForgeFlowingFluid.Properties SALT_WATER_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> SALT_WATER_FLUID.get(), () -> SALT_WATER_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOW_RL)
-            .density(15).viscosity(5).sound(SoundEvents.BLOCK_WATER_AMBIENT).overlay(WATER_OVERLAY_RL).color(0xff5abcd8)).slopeFindDistance(5).levelDecreasePerBlock(1).canMultiply()
+            .density(15).viscosity(5).sound(SoundEvents.BLOCK_WATER_AMBIENT).overlay(WATER_OVERLAY_RL).color(0xff45ADF2)).slopeFindDistance(5).levelDecreasePerBlock(1).canMultiply()
             .block(() -> ModFluids.SALT_WATER_BLOCK.get()).bucket(() -> ModItems.SALT_WATER_BUCKET.get());
     public static final RegistryObject<FlowingFluidBlock> SALT_WATER_BLOCK = ModBlocks.BLOCKS.register("salt_water",
             () -> new FlowingFluidBlock(() -> ModFluids.SALT_WATER_FLUID.get(), AbstractBlock.Properties.create(Material.WATER)
@@ -41,7 +41,7 @@ public class ModFluids {
             () -> new ForgeFlowingFluid.Flowing(ModFluids.CRUDE_OIL_PROPERTIES));
     public static final ForgeFlowingFluid.Properties CRUDE_OIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> CRUDE_OIL_FLUID.get(), () -> CRUDE_OIL_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOW_RL)
-            .density(15).viscosity(5).sound(SoundEvents.BLOCK_WATER_AMBIENT).overlay(WATER_OVERLAY_RL).color(0x992e1515)).slopeFindDistance(4).levelDecreasePerBlock(2)
+            .density(15).viscosity(5).sound(SoundEvents.BLOCK_WATER_AMBIENT).overlay(WATER_OVERLAY_RL).color(0x002e1515)).slopeFindDistance(4).levelDecreasePerBlock(2)
             .block(() -> ModFluids.CRUDE_OIL_BLOCK.get()).bucket(() -> ModItems.CRUDE_OIL_BUCKET.get());
     public static final RegistryObject<FlowingFluidBlock> CRUDE_OIL_BLOCK = ModBlocks.BLOCKS.register("crude_oil",
             () -> new FlowingFluidBlock(() -> ModFluids.CRUDE_OIL_FLUID.get(), AbstractBlock.Properties.create(Material.WATER)
