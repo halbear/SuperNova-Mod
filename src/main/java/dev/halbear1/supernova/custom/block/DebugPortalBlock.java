@@ -1,7 +1,7 @@
 package dev.halbear1.supernova.custom.block;
 
-import dev.halbear1.supernova.registry.ModBlocks;
-import dev.halbear1.supernova.registry.ModDimensions;
+import dev.halbear1.supernova.registry.blocks.ModBlocks;
+import dev.halbear1.supernova.registry.worldgen.ModDimensions;
 import dev.halbear1.supernova.world.dimension.DebugTeleporter;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

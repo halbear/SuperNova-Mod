@@ -1,11 +1,12 @@
-package dev.halbear1.supernova.registry;
+package dev.halbear1.supernova.registry.blocks;
 
 import dev.halbear1.supernova.SuperNova;
 
 import dev.halbear1.supernova.custom.block.ArcFurnace;
 import dev.halbear1.supernova.custom.block.DebugPortalBlock;
-import dev.halbear1.supernova.custom.block.HorizontalRotationalDecorBlock;
 import dev.halbear1.supernova.custom.block.StraightSteelPipe;
+import dev.halbear1.supernova.registry.items.ModItems;
+import dev.halbear1.supernova.registry.items.ItemGroups;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:crude_oil_bucket"
+    },
+    "title": "WHAT THE HELL IS A KILOMETER????",
+    "description": "Get Crude Oil",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_salt_water",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:crude_oil_bucket"
+          }
+        ]
+      }
+    }
+  }
+}

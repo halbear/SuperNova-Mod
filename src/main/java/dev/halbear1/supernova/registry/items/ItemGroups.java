@@ -1,6 +1,6 @@
-package dev.halbear1.supernova.registry;
+package dev.halbear1.supernova.registry.items;
 
-import dev.halbear1.supernova.SuperNova;
+import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 

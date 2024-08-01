@@ -1,7 +1,7 @@
 package dev.halbear1.supernova.world.dimension;
 
 import dev.halbear1.supernova.custom.block.ArcFurnace;
-import dev.halbear1.supernova.registry.ModBlocks;
+import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.fluid.Fluids;

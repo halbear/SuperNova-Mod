@@ -1,10 +1,9 @@
-package dev.halbear1.supernova.registry;
+package dev.halbear1.supernova.registry.worldgen;
 
 import dev.halbear1.supernova.SuperNova;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.world.Dimension;
 import net.minecraft.world.World;
 
 public class ModDimensions {

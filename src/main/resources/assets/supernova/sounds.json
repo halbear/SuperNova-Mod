@@ -1,0 +1,10 @@
+{
+  "new_world": {
+    "sounds": [
+      {
+        "name": "supernova:new_world",
+        "stream": "true"
+      }
+    ]
+  }
+}

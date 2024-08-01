@@ -1,6 +1,6 @@
 package dev.halbear1.supernova.setup;
 import  dev.halbear1.supernova.SuperNova;
-import  dev.halbear1.supernova.registry.ModConfiguredFeatures;
+import dev.halbear1.supernova.registry.worldgen.ModConfiguredFeatures;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

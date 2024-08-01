@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "supernova:bauxite_chunk"
+      "item": "supernova:new_world_md"
     },
-    "title": "Rock Collector",
-    "description": "Obtain all the Raw Metals",
+    "title": "A New World",
+    "description": "Obtain the 'New World' music disc!",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
@@ -16,16 +16,7 @@
       "conditions": {
         "items": [
           {
-            "item": "supernova:copper_chunk"
-          },
-          {
-            "item": "supernova:bauxite_chunk"
-          },
-          {
-            "item": "supernova:rutile_chunk"
-          },
-          {
-            "item": "supernova:anatase_chunk"
+            "item": "supernova:new_world_md"
           }
         ]
       }

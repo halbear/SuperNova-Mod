@@ -1,8 +1,8 @@
 package dev.halbear1.supernova.setup;
 
 import  dev.halbear1.supernova.SuperNova;
-import  dev.halbear1.supernova.registry.ModBlocks;
-import dev.halbear1.supernova.registry.ModFluids;
+import dev.halbear1.supernova.registry.blocks.ModBlocks;
+import dev.halbear1.supernova.registry.blocks.ModFluids;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;

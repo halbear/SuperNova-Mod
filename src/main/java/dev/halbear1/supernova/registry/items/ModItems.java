@@ -1,15 +1,17 @@
-package dev.halbear1.supernova.registry;
+package dev.halbear1.supernova.registry.items;
 
 import dev.halbear1.supernova.SuperNova;
+import dev.halbear1.supernova.registry.blocks.ModFluids;
+import dev.halbear1.supernova.registry.util.ModSoundEvents;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.MusicDiscItem;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -104,7 +106,6 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
-
     //whatever carborundum is
     public static final RegistryObject<Item> CARBORUNDUM = ITEMS.register("carborundum", // hal
             () -> new Item(new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
@@ -115,5 +116,8 @@ public class ModItems {
     public static final RegistryObject<Item> CRUDE_OIL_BUCKET = ITEMS.register("crude_oil_bucket",()-> new BucketItem(()-> ModFluids.CRUDE_OIL_FLUID.get(),
             new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
-
+    //music disks
+    public static final RegistryObject<Item> NEW_WORLD_MD = ITEMS.register("new_world_md",
+            ()-> new MusicDiscItem(1, () -> ModSoundEvents.NEW_WORLD.get(),
+                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 }
