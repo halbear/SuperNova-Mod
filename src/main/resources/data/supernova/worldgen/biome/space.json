@@ -1,0 +1,31 @@
+{
+  "surface_builder": "supernova:space_void",
+  "depth": 0,
+  "scale": 0,
+  "temperature": -270,
+  "downfall": 0,
+  "precipitation": "none",
+  "temperature_modifier": "frozen",
+  "category": "the_end",
+  "player_spawn_friendly": false,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 983836,
+    "fog_color": 590099,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 7842607,
+    "foliage_color": 7842607,
+    "music": {
+      "sound": "supernova:new_world",
+      "min_delay": 0,
+      "max_delay": 10,
+      "replace_current_music": true
+    }
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

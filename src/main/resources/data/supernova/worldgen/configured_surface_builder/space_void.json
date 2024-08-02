@@ -1,0 +1,14 @@
+{
+  "type": "supernova:space",
+  "config": {
+    "top_material": {
+      "Name": "minecraft:block/air"
+    },
+    "under_material": {
+      "Name": "minecraft:block/air"
+    },
+    "underwater_material": {
+      "Name": "minecraft:block/air"
+    }
+  }
+}

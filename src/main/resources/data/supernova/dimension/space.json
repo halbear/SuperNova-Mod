@@ -3,7 +3,7 @@
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "minecraft:end_barrens",
+      "biome": "supernova:space",
       "lakes": false,
       "features": false,
       "layers": [],
