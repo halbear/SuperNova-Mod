@@ -15,5 +15,6 @@ Distribution:\
 -please do not reupload on sites other than curseforge and modrinth\
 -free to use for content creation
 
-Discord server:
-https://discord.gg/pnXGRaXMjv
+Discord servers:\
+https://discord.gg/pnXGRaXMjv\
+https://discord.gg/p3fcBPYM6c
