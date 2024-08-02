@@ -1,31 +1,28 @@
 {
   "display": {
     "icon": {
-      "item": "supernova:bauxite_chunk"
+      "item": "supernova:bauxite_block"
     },
-    "title": "Rock Collector",
-    "description": "Obtain all the Raw Metals",
+    "title": "Bauxite Family Tree",
+    "description": "Obtain all the Bauxite materials",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "supernova:obtain_copper_chunk",
+  "parent": "supernova:obtain_all_raw",
   "criteria":  {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "supernova:copper_chunk"
+            "item": "supernova:bauxite_ore"
           },
           {
             "item": "supernova:bauxite_chunk"
           },
           {
-            "item": "supernova:rutile_chunk"
-          },
-          {
-            "item": "supernova:anatase_chunk"
+            "item": "supernova:bauxite_block"
           }
         ]
       }
