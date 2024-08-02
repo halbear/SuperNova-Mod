@@ -1,5 +1,6 @@
 package dev.halbear1.supernova;
 
+import dev.halbear1.supernova.registry.ModParticles;
 import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import dev.halbear1.supernova.registry.blocks.ModFluids;
 import dev.halbear1.supernova.registry.items.ModItems;
@@ -42,8 +43,8 @@ public class SuperNova // to chef, peaceful and pal, no touchy
         ModFluids.FLUIDS.register(bus);
         ModSoundEvents.SOUND_EVENTS.register(bus);
         ModBiomes.BIOMES.register(bus);
+        ModParticles.PARTICLE_TYPES.register(bus);
         //ModEntities.ENTITIES.register(bus);
-        //ModParticles.PARTICLE_TYPES.register(bus);
         //ModFeatures.FEATURES.register(bus);
         //ModSurfaceBuilders.SURFACE_BUILDERS.register(bus);
         //ModBiomes.registerBiomes();

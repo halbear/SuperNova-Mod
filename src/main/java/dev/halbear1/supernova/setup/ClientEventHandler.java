@@ -1,11 +1,16 @@
 package dev.halbear1.supernova.setup;
 
 import  dev.halbear1.supernova.SuperNova;
+import dev.halbear1.supernova.custom.particle.StarSparkle;
+import dev.halbear1.supernova.registry.ModParticles;
 import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import dev.halbear1.supernova.registry.blocks.ModFluids;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -53,8 +58,9 @@ public class ClientEventHandler {
     }
 
     /*@SubscribeEvent
-    public static void registerFactory(ParticleFactoryRegisterEvent event){
+    public static void registerFactory(final ParticleFactoryRegisterEvent event){
         //register particles here, an example would be:
         //Minecraft.GetInstance().particleEngine.register(ModParticleTypes.ExampleParticle.get(), ExampleParticle.Factory::new);
+        Minecraft.getInstance().particles.registerFactory(ModParticles.STAR_SPARKLE.get(), StarSparkle.Factory::new);
     }*/
 }

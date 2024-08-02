@@ -21,6 +21,12 @@
       "min_delay": 0,
       "max_delay": 10,
       "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "supernova:star_sparkle"
+      },
+      "probability": 1
     }
   },
   "starts": [],
