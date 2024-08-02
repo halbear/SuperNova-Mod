@@ -2,7 +2,7 @@
 
 A mod by Iron Horse Game Development
 
-Developers: halbear1, Masterchefreal and Paladin(AKA TechyKnight), peacefulgamer\
+Developers: halbear1, Masterchefreal and TechyKnight(AKA Paladin), peacefulgamer_ \
 musicians: Billz_game(AKA Billy Beats)
 
 Contribution:\
