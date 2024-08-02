@@ -16,6 +16,7 @@ public class ModSoundEvents {
 
     //Music Disks
     public static final RegistryObject<SoundEvent> NEW_WORLD = registerSoundEvent("new_world");
+    public static final RegistryObject<SoundEvent> NEBULA = registerSoundEvent("nebula");
 
     public static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(SuperNova.MOD_ID, name)));

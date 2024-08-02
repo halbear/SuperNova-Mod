@@ -4,6 +4,7 @@ import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import dev.halbear1.supernova.registry.blocks.ModFluids;
 import dev.halbear1.supernova.registry.items.ModItems;
 import dev.halbear1.supernova.registry.util.ModSoundEvents;
+import dev.halbear1.supernova.registry.worldgen.ModBiomes;
 import dev.halbear1.supernova.registry.worldgen.ModConfiguredFeatures;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,8 +41,8 @@ public class SuperNova // to chef, peaceful and pal, no touchy
         ModItems.ITEMS.register(bus);
         ModFluids.FLUIDS.register(bus);
         ModSoundEvents.SOUND_EVENTS.register(bus);
+        ModBiomes.BIOMES.register(bus);
         //ModEntities.ENTITIES.register(bus);
-        //ModBiomes.BIOMES.register(bus);
         //ModParticles.PARTICLE_TYPES.register(bus);
         //ModFeatures.FEATURES.register(bus);
         //ModSurfaceBuilders.SURFACE_BUILDERS.register(bus);

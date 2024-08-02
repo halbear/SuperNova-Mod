@@ -120,4 +120,7 @@ public class ModItems {
     public static final RegistryObject<Item> NEW_WORLD_MD = ITEMS.register("new_world_md",
             ()-> new MusicDiscItem(1, () -> ModSoundEvents.NEW_WORLD.get(),
                     new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
+    public static final RegistryObject<Item> NEBULA_MD = ITEMS.register("nebula_md",
+            ()-> new MusicDiscItem(1, () -> ModSoundEvents.NEBULA.get(),
+                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
 }

@@ -6,5 +6,13 @@
         "stream": "true"
       }
     ]
+  },
+  "nebula": {
+    "sounds": [
+      {
+        "name": "supernova:nebula",
+        "stream": "true"
+      }
+    ]
   }
 }

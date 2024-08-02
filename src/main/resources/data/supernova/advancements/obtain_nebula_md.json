@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:nebula_md"
+    },
+    "title": "A New World",
+    "description": "Obtain the 'Nebula' music disc!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_new_world_md",
+  "criteria":  {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:new_world_md"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}
+
+
