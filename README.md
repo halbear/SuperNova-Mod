@@ -16,5 +16,5 @@ Distribution:\
 -free to use for content creation
 
 Discord servers:\
-https://discord.gg/pnXGRaXMjv\
+https://discord.gg/pnXGRaXMjv \
 https://discord.gg/p3fcBPYM6c
