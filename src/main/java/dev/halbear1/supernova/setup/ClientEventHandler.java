@@ -1,7 +1,7 @@
 package dev.halbear1.supernova.setup;
 
 import  dev.halbear1.supernova.SuperNova;
-import dev.halbear1.supernova.custom.particle.StarSparkle;
+//import dev.halbear1.supernova.custom.particle.StarSparkle;
 import dev.halbear1.supernova.registry.ModParticles;
 import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import dev.halbear1.supernova.registry.blocks.ModFluids;
