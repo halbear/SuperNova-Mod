@@ -82,6 +82,15 @@ public class ModBlocks { //hal
                     )
             );
 
+    public static final RegistryObject<Block> RUTILE_CHUNK_BLOCK = //hal
+            registerBlock("rutile_chunk_block", () -> new Block(AbstractBlock.Properties
+                            .create(Material.ROCK)
+                            .sound(SoundType.STONE)
+                            .hardnessAndResistance(2.0f, 1.0f)
+                            .harvestTool(ToolType.PICKAXE)
+                    )
+            );
+
     //Technology
     public static final RegistryObject<Block> ARC_FURNACE = //hal & pal
             registerBlock("arc_furnace", () -> new ArcFurnace(AbstractBlock.Properties

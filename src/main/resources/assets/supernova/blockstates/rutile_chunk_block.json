@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "supernova:block/rutile_block", "weight": 4
+      },
+      {
+        "model": "supernova:block/rutile_block1", "weight": 5
+      },
+      {
+        "model": "supernova:block/rutile_block2", ",weight": 1
+      }
+    ]
+  }
+}
