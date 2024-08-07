@@ -9,8 +9,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.text.ChatType;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
@@ -29,12 +32,14 @@ public class DebugPortalBlock extends Block {
                        worldin.getBlockState(blockPos.up(1)).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get()) &&
                        worldin.getBlockState(blockPos.up(2)).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get())) {
                         DimensionSwitch(worldin, blockPos, player);
+                        server.getPlayerList().func_232641_a_(new StringTextComponent("dimension changed portal"), ChatType.SYSTEM, Util.DUMMY_UUID);
                         return ActionResultType.SUCCESS;
                     } else if (worldin.getBlockState(blockPos.down(1).north(1)).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get())&&
                             worldin.getBlockState(blockPos.down(1).south(1)).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get()) &&
                             worldin.getBlockState(blockPos.up(1)).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get()) &&
                             worldin.getBlockState(blockPos.up(2)).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get())) {
                         DimensionSwitch(worldin, blockPos, player);
+                        server.getPlayerList().func_232641_a_(new StringTextComponent("dimension changed portal"), ChatType.SYSTEM, Util.DUMMY_UUID);
                         return ActionResultType.SUCCESS;
                     }
                 }
