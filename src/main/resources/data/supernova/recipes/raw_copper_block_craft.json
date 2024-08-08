@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "supernova:copper_chunk"
+    }
+  },
+  "result": {
+    "item": "supernova:raw_copper_block"
+  }
+}

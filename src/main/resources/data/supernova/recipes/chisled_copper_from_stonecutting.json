@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "supernova:copper_block"
+  },
+  "result": "supernova:chisled_copper_block",
+  "count": 1
+}

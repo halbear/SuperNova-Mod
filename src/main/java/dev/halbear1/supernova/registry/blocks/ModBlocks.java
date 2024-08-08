@@ -84,8 +84,32 @@ public class ModBlocks { //hal
 
     public static final RegistryObject<Block> RUTILE_CHUNK_BLOCK = //hal
             registerBlock("rutile_chunk_block", () -> new Block(AbstractBlock.Properties
-                            .create(Material.ROCK)
-                            .sound(SoundType.STONE)
+                            .create(Material.GLASS)
+                            .sound(SoundType.METAL)
+                            .hardnessAndResistance(2.0f, 1.0f)
+                            .harvestTool(ToolType.PICKAXE)
+                    )
+            );
+    public static final RegistryObject<Block> RAW_COPPER_BLOCK = //hal
+            registerBlock("raw_copper_block", () -> new Block(AbstractBlock.Properties
+                            .create(Material.IRON)
+                            .sound(SoundType.METAL)
+                            .hardnessAndResistance(2.0f, 1.0f)
+                            .harvestTool(ToolType.PICKAXE)
+                    )
+            );
+    public static final RegistryObject<Block> COPPER_BLOCK = //hal
+            registerBlock("copper_block", () -> new Block(AbstractBlock.Properties
+                            .create(Material.IRON)
+                            .sound(SoundType.METAL)
+                            .hardnessAndResistance(2.0f, 1.0f)
+                            .harvestTool(ToolType.PICKAXE)
+                    )
+            );
+    public static final RegistryObject<Block> CHISLED_COPPER_BLOCK = //hal
+            registerBlock("chisled_copper_block", () -> new Block(AbstractBlock.Properties
+                            .create(Material.IRON)
+                            .sound(SoundType.METAL)
                             .hardnessAndResistance(2.0f, 1.0f)
                             .harvestTool(ToolType.PICKAXE)
                     )

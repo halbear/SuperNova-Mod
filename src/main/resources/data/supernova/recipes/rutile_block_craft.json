@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "supernova:rutile_chunk"
+    }
+  },
+  "result": {
+    "item": "supernova:rutile_chunk_block"
+  }
+}
