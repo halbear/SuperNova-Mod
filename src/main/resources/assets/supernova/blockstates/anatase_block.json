@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "supernova:block/anatase_block", "weight": 4
+      },
+      {
+        "model": "supernova:block/anatase_block1", "weight": 2
+      },
+      {
+        "model": "supernova:block/anatase_block2", ",weight": 3
+      }
+    ]
+  }
+}

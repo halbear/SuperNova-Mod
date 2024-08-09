@@ -90,6 +90,14 @@ public class ModBlocks { //hal
                             .harvestTool(ToolType.PICKAXE)
                     )
             );
+    public static final RegistryObject<Block> ANATASE_BLOCK = //hal
+            registerBlock("anatase_block", () -> new Block(AbstractBlock.Properties
+                            .create(Material.GLASS)
+                            .sound(SoundType.METAL)
+                            .hardnessAndResistance(2.0f, 1.0f)
+                            .harvestTool(ToolType.PICKAXE)
+                    )
+            );
     public static final RegistryObject<Block> RAW_COPPER_BLOCK = //hal
             registerBlock("raw_copper_block", () -> new Block(AbstractBlock.Properties
                             .create(Material.IRON)

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "supernova:anatase_chunk"
+    }
+  },
+  "result": {
+    "item": "supernova:anatase_block"
+  }
+}
