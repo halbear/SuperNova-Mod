@@ -14,5 +14,13 @@
         "stream": "true"
       }
     ]
+  },
+  "stardust_mountain": {
+    "sounds": [
+      {
+        "name": "supernova:stardust_mountain",
+        "stream": "true"
+      }
+    ]
   }
 }

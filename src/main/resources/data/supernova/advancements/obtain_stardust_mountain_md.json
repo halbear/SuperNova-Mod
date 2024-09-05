@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:stardust_mountain_md"
+    },
+    "title": "Stardust!",
+    "description": "Obtain the 'Stardust Mountain' music disc!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_new_world_md",
+  "criteria":  {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:stardust_mountain_md"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}
+
+
