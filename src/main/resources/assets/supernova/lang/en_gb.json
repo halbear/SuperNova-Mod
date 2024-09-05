@@ -16,6 +16,8 @@
   "item.supernova.new_world_md.desc": "Billy Beats - New World",
   "item.supernova.nebula_md": "§5Music Disc§r",
   "item.supernova.nebula_md.desc": "Billy Beats - Nebula",
+  "item.supernova.stardust_mountain_md": "§5Music Disc§r",
+  "item.supernova.stardust_mountain_md.desc": "Billy Beats - Stardust mountain",
 
   "block.supernova.bauxite_ore": "Bauxite Ore",
   "block.supernova.rutile_ore": "Rutile Ore",
@@ -33,11 +35,12 @@
   "itemGroup.supernovaBlocksModTab": "SuperNova Blocks",
   "itemGroup.supernovaItemsModTab": "SuperNova Items",
 
-  "tooltip.supernova.tooltip_prompt": "Hold \u00A7eSHIFT\u00A7r to see what this is used for",
-  "tooltip.supernova.bauxite_tooltip": "Melt this down to make \u00A7eMolten Bauxite\u00A7r using the §eElectric Arc Furnace §r \n \u00A7eMolten Bauxite\u00A7r is used to make §eAluminium!§r through an \u00A7eElectrolysis Cell\u00A7r",
+  "tooltip.supernova.tooltip_prompt": "Hold §eSHIFT§r to see what this is used for",
+  "tooltip.supernova.bauxite_tooltip": "Melt this down to make §eMolten Bauxite§r using the §eElectric Arc Furnace §r \n §eMolten Bauxite§r is used to make §eAluminium!§r through an §eElectrolysis Cell§r",
   "tooltip.supernova.rutile_tooltip": "Melt this down to make §eMolten Rutile§r using the §eElectric Arc Furnace §r \n §eMolten Rutile§r is used to make §eTitanium!§r through an §eElectrolysis Cell§r with §eChlorine Gas§r",
   "tooltip.supernova.copperchunk_tooltip": "Smelt this into a §eCopper Ingot§r using any §eVanilla Furnace§r \n§eCopper Ingot§r is used to craft §eMolten Grade 1 Alloy§r and §eMolten Grade 2 Alloy§r \n§eCopper Block§r is used to craft an§e Electric Fly Wheel§r",
   "tooltip.supernova.silicachunk_tooltip": "Grind into §eSilica Powder§r using a §eVanilla Stonecutter§r \n §eSilica Powder§r is used to make §eSilicon§r and §eCarborundum§r",
   "tooltip.supernova.silicapowder_tooltip": "Burn in an §eElectric Arc Furnace §r with coal to make §eSilicon§r \n Blast using a §eVanilla Blast Furnace§r to create §eCarborundum§r",
-  "tooltip.supernova.steel_pipe_tooltip": "Pipe type: Liquids"
+  "tooltip.supernova.steel_pipe_tooltip": "Pipe type: Liquids",
+  "tooltip.supernova.anatasechunk_tooltip": "Melt this down to make §eMolten anatase§r using the §eElectric Arc Furnace §r \n §eMolten anatase§r is used to make §eTitanium!§r through an §eElectrolysis Cell§r with §eChlorine Gas§r"
 }

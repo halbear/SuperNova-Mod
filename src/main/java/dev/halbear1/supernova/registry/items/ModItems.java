@@ -123,4 +123,7 @@ public class ModItems {
     public static final RegistryObject<Item> NEBULA_MD = ITEMS.register("nebula_md",
             ()-> new MusicDiscItem(1, () -> ModSoundEvents.NEBULA.get(),
                     new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
+    public static final RegistryObject<Item> STARDUST_MOUNTAIN_MD = ITEMS.register("stardust_mountain_md",
+            ()-> new MusicDiscItem(1, () -> ModSoundEvents.STARDUST_MOUNTAIN.get(),
+                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
 }
