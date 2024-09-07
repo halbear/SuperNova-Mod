@@ -22,5 +22,13 @@
         "stream": "true"
       }
     ]
+  },
+  "astral_nightmare": {
+    "sounds": [
+      {
+        "name": "supernova:astral_nightmare",
+        "stream": "true"
+      }
+    ]
   }
 }

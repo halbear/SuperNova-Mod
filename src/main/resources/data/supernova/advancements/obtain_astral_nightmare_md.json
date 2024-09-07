@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:astral_nightmare_md"
+    },
+    "title": "Astral Nightmare",
+    "description": "Obtain the 'Astral Nightmare' music disc!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_stardust_mountain_md",
+  "criteria":  {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:astral_nightmare_md"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}
+
+
