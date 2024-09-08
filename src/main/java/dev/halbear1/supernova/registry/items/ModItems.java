@@ -117,6 +117,9 @@ public class ModItems {
             new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
     //music disks
+    public static final RegistryObject<Item> ASTRAL_NIGHTMARE = ITEMS.register("astral_nightmare_md",
+            ()-> new MusicDiscItem(1, () -> ModSoundEvents.ASTRAL_NIGHTMARE.get(),
+                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
     public static final RegistryObject<Item> NEW_WORLD_MD = ITEMS.register("new_world_md",
             ()-> new MusicDiscItem(1, () -> ModSoundEvents.NEW_WORLD.get(),
                     new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
@@ -126,8 +129,6 @@ public class ModItems {
     public static final RegistryObject<Item> STARDUST_MOUNTAIN_MD = ITEMS.register("stardust_mountain_md",
             ()-> new MusicDiscItem(1, () -> ModSoundEvents.STARDUST_MOUNTAIN.get(),
                     new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
-    public static final RegistryObject<Item> ASTRAL_NIGHTMARE = ITEMS.register("astral_nightmare_md",
-            ()-> new MusicDiscItem(1, () -> ModSoundEvents.ASTRAL_NIGHTMARE.get(),
-                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
+
 
 }
