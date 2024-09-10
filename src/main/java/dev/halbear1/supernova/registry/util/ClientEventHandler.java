@@ -1,4 +1,4 @@
-package dev.halbear1.supernova.setup;
+package dev.halbear1.supernova.util;
 
 import  dev.halbear1.supernova.SuperNova;
 //import dev.halbear1.supernova.custom.particle.StarSparkle;
@@ -29,6 +29,18 @@ import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
+
+    @SubscribeEvent
+    public void PlayerGravityCheck(PlayerEvent.PlayerChangedDimensionEvent dimension) {
+        Entity player = dimension.getPlayer();
+        if (dimension.getFrom() == ModDimensions.SPACE) {
+            player.setNoGravity(false);
+        }
+        if (dimension.getTo() == ModDimensions.SPACE) {
+            player.setNoGravity(true);
+        }
+    }
+
     @SafeVarargs
     public static void SetCollectionRenderType(RenderType type, RegistryObject<Block>... blocks_list) { //hal
         for (RegistryObject<Block> blockRegistryObject : blocks_list) {
