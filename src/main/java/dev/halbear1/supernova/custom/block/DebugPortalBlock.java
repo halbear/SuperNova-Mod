@@ -41,6 +41,10 @@ public class DebugPortalBlock extends Block {
                         DimensionSwitch(worldin, blockPos, player);
                         server.getPlayerList().func_232641_a_(new StringTextComponent("dimension changed portal"), ChatType.SYSTEM, Util.DUMMY_UUID);
                         return ActionResultType.SUCCESS;
+                    } else if(worldin.getBlockState(blockPos).matchesBlock(ModBlocks.DEBUG_PORTAL_BLOCK.get())) {
+                        DimensionSwitch(worldin, blockPos, player);
+                        server.getPlayerList().func_232641_a_(new StringTextComponent("dimension changed portal"), ChatType.SYSTEM, Util.DUMMY_UUID);
+                        return ActionResultType.SUCCESS;
                     }
                 }
             }

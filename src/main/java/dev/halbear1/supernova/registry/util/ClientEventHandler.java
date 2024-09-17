@@ -1,4 +1,4 @@
-package dev.halbear1.supernova.util;
+package dev.halbear1.supernova.registry.util;
 
 import  dev.halbear1.supernova.SuperNova;
 //import dev.halbear1.supernova.custom.particle.StarSparkle;
@@ -10,11 +10,19 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.world.DimensionRenderInfo;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.RegistryKey;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Util;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.util.text.ChatType;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.world.Dimension;
+import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.event.TickEvent;
@@ -27,19 +35,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
+import java.util.AbstractMap;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Stream;
+
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
 
-    @SubscribeEvent
-    public void PlayerGravityCheck(PlayerEvent.PlayerChangedDimensionEvent dimension) {
-        Entity player = dimension.getPlayer();
-        if (dimension.getFrom() == ModDimensions.SPACE) {
-            player.setNoGravity(false);
-        }
-        if (dimension.getTo() == ModDimensions.SPACE) {
-            player.setNoGravity(true);
-        }
-    }
 
     @SafeVarargs
     public static void SetCollectionRenderType(RenderType type, RegistryObject<Block>... blocks_list) { //hal
@@ -47,7 +50,6 @@ public class ClientEventHandler {
             RenderTypeLookup.setRenderLayer(blockRegistryObject.get(), type);
         }
     }
-
     @SubscribeEvent
     public static void init(final FMLClientSetupEvent event) { // block render types, examples for paladin and chef to see
         // pal: drying up your code
@@ -56,7 +58,6 @@ public class ClientEventHandler {
                 ModBlocks.STEEL_PIPE
                 //blocks here
         );
-
         SetCollectionRenderType(RenderType.getCutout(), // Cutout: Texture pixels with a transparency element are discarded, fastest method, prevents re-ordering at render.
                 ModBlocks.BAUXITE_ORE, //hal
                 ModBlocks.RUTILE_ORE, // pal: rutile, generator
@@ -64,7 +65,6 @@ public class ClientEventHandler {
                 ModBlocks.ANATASE_ORE
                 //blocks here
         );
-
         RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_FLUID.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_FLOWING.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_BLOCK.get(), RenderType.getTranslucent());

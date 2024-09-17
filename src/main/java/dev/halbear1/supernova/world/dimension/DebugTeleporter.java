@@ -43,11 +43,7 @@ public class DebugTeleporter implements ITeleporter {
                     break;
                 }
                 if (doSetBlock) {
-                    DestinationWorld.setBlockState(DestinationPos.down().east().south(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.down().west(1).south(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(2).south(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.south(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
-                    DestinationWorld.setBlockState(DestinationPos.up(1).south(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
+                    DestinationWorld.setBlockState(DestinationPos.down(), ModBlocks.DEBUG_PORTAL_BLOCK.get().getDefaultState());
                 }
             }
 
