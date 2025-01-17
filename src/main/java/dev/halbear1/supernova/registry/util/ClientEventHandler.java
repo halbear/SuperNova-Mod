@@ -5,6 +5,7 @@ import  dev.halbear1.supernova.SuperNova;
 import dev.halbear1.supernova.registry.ModParticles;
 import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import dev.halbear1.supernova.registry.blocks.ModFluids;
+import dev.halbear1.supernova.registry.worldgen.ModBiomes;
 import dev.halbear1.supernova.registry.worldgen.ModDimensions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.IParticleFactory;
@@ -42,7 +43,6 @@ import java.util.stream.Stream;
 
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventHandler {
-
 
     @SafeVarargs
     public static void SetCollectionRenderType(RenderType type, RegistryObject<Block>... blocks_list) { //hal
