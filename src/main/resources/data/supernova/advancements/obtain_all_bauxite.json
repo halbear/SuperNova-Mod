@@ -6,7 +6,7 @@
     "title": "Bauxite Family Tree",
     "description": "Obtain all the Bauxite materials",
     "show_toast": true,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": false
   },
   "parent": "supernova:obtain_all_raw",

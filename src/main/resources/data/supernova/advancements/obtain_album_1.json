@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:nebula_md"
+    },
+    "title": "Star Collector",
+    "description": "Obtain every music disc from the first soundtrack!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_astral_nightmare_md",
+  "criteria":  {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:astral_nightmare_md"
+          },
+          {
+            "item": "supernova:nebula_md"
+          },
+          {
+            "item": "supernova:new_world_md"
+          },
+          {
+            "item": "supernova:stardust_mountain_md"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}
+
+

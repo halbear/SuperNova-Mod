@@ -1,25 +1,30 @@
 {
   "display": {
     "icon": {
-      "item": "supernova:salt_water_bucket"
+      "item": "supernova:fissure_in_space_md"
     },
-    "title": "This stuff is NOT drinkable...",
-    "description": "Get Salt Water",
+    "title": "Fissure?",
+    "description": "Obtain the 'Fissure In Space' music disc!",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "parent": "supernova:supernova_parent",
-  "criteria": {
+  "criteria":  {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "supernova:salt_water_bucket"
+            "item": "supernova:fissure_in_space_md"
           }
         ]
       }
     }
+  },
+  "rewards": {
+    "experience": 25
   }
 }
+
+
