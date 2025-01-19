@@ -12,17 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = SuperNova.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class CommonEventHandler {
 
-    @SubscribeEvent
-    public void PlayerGravityCheck(PlayerEvent.PlayerChangedDimensionEvent event) {
-        PlayerEntity player = event.getPlayer();
-        if (event.getFrom() == ModDimensions.SPACE) {
-            player.setNoGravity(false);
-        }
-        if (event.getTo() == ModDimensions.SPACE) {
-            player.setNoGravity(true);
-        }
-    }
-
     @SubscribeEvent //hal & pal
     public static void biomeModification(BiomeLoadingEvent event) { // this will add features such as ore to the overworld
         event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> ModConfiguredFeatures.BAUXITE_ORE_GEN);

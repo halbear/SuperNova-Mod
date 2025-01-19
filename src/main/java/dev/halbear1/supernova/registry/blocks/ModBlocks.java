@@ -19,9 +19,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.function.Supplier;
 
 public class ModBlocks { //hal
-    public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, SuperNova.MOD_ID);
-
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SuperNova.MOD_ID);
 //the blocks will appear in inventory as in order of declaration here, please keep all block types grouped together
 //such as group ores together, group organic materials together, keep it relatively organised in both the registry AND the en_us.json - hal
 

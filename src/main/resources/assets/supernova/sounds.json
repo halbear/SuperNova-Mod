@@ -30,5 +30,13 @@
         "stream": "true"
       }
     ]
+  },
+  "fissure_in_space": {
+    "sounds": [
+      {
+        "name": "supernova:fissure_in_space",
+        "stream": "true"
+      }
+    ]
   }
 }

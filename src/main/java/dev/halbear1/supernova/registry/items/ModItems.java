@@ -127,6 +127,9 @@ public class ModItems {
     public static final RegistryObject<Item> STARDUST_MOUNTAIN_MD = ITEMS.register("stardust_mountain_md",
             ()-> new MusicDiscItem(1, () -> ModSoundEvents.STARDUST_MOUNTAIN.get(),
                     new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
+    public static final RegistryObject<Item> FISSURE_IN_SPACE_MD = ITEMS.register("fissure_in_space_md",
+            ()-> new MusicDiscItem(1, () -> ModSoundEvents.FISSURE_IN_SPACE.get(),
+                    new Item.Properties().group(ItemGroups.SUPERNOVA_ITEMS_TAB).maxStackSize(1)));
 
 
 }

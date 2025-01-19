@@ -1,27 +1,75 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "supernova:block/steel_pipe",
+    "facing=north,floor_placement=false,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/fullpipestraight",
       "y": 0
     },
-    "facing=south": {
-      "model": "supernova:block/steel_pipe",
+    "facing=south,floor_placement=false,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/fullpipestraight",
       "y": 180
     },
-    "facing=east": {
-      "model": "supernova:block/steel_pipe",
+    "facing=east,floor_placement=false,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/fullpipestraight",
       "y": 90
     },
-    "facing=west": {
-      "model": "supernova:block/steel_pipe",
+    "facing=west,floor_placement=false,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/fullpipestraight",
       "y": 270
     },
-    "facing=up": {
-      "model": "supernova:block/steel_pipe",
+    "facing=up,floor_placement=false,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/fullpipestraight",
       "x": 90
     },
-    "facing=down": {
-      "model": "supernova:block/steel_pipe",
+    "facing=down,floor_placement=false,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/fullpipestraight",
+      "x": 270
+    },
+    "facing=north,floor_placement=true,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_ground",
+      "y": 0
+    },
+    "facing=south,floor_placement=true,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_ground",
+      "y": 180
+    },
+    "facing=east,floor_placement=true,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_ground",
+      "y": 90
+    },
+    "facing=west,floor_placement=true,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_ground",
+      "y": 270
+    },
+    "facing=up,floor_placement=true,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_ground",
+      "x": 90
+    },
+    "facing=down,floor_placement=true,roof_placement=false": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_ground",
+      "x": 270
+    },
+    "facing=north,floor_placement=false,roof_placement=true": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_roof",
+      "y": 0
+    },
+    "facing=south,floor_placement=false,roof_placement=true": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_roof",
+      "y": 180
+    },
+    "facing=east,floor_placement=false,roof_placement=true": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_roof",
+      "y": 90
+    },
+    "facing=west,floor_placement=false,roof_placement=true": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_roof",
+      "y": 270
+    },
+    "facing=up,floor_placement=false,roof_placement=true": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_roof",
+      "x": 90
+    },
+    "facing=down,floor_placement=false,roof_placement=true": {
+      "model": "supernova:block/pipes/fullpipe/steel_pipe_on_roof",
       "x": 270
     }
   }
