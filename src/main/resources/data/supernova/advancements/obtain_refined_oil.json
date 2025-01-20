@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:refined_oil_bucket"
+    },
+    "title": "Does this refinery make beer?",
+    "description": "Refine Crude Oil",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_oil",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:refined_oil_bucket"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,12 +1,14 @@
 package dev.halbear1.supernova.custom.block;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import dev.halbear1.supernova.custom.block.blockstate_stuff.SupernovaBlockstates;
 import dev.halbear1.supernova.registry.blocks.ModBlocks;
 import net.minecraft.block.*;
-import net.minecraft.data.BlockModelDefinition;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.EnumProperty;
+import dev.halbear1.supernova.custom.block.blockstate_stuff.enums.PipeContents;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.Direction;
@@ -22,6 +24,12 @@ public class StraightSteelPipe extends DirectionalBlock {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
     public static final BooleanProperty FLOOR_PLACEMENT = BooleanProperty.create("floor_placement");
     public static final BooleanProperty ROOF_PLACEMENT = BooleanProperty.create("roof_placement");
+    public static final EnumProperty<PipeContents> PIPE_CONTENTS_EMPTY;
+    public static final EnumProperty<PipeContents> PIPE_CONTENTS_OIL;
+    public static final EnumProperty<PipeContents> PIPE_CONTENTS_WATER;
+    public static final EnumProperty<PipeContents> PIPE_CONTENTS_LAVA;
+    public static final EnumProperty<PipeContents> PIPE_CONTENTS_SALTWATER;
+    public static final DirectionProperty FLOW_DIRECTION = DirectionProperty.create("flow_direction");
 
     public StraightSteelPipe(AbstractBlock.Properties builder){
         super(builder);
@@ -68,8 +76,12 @@ public class StraightSteelPipe extends DirectionalBlock {
         boolean OnGround = false;
         boolean OnRoof = false;
         if (world.getBlockState(placementPos.down()).getBlock()!=Blocks.AIR &&
+                world.getBlockState(placementPos.down()).getMaterial() != Material.PLANTS &&
+                !world.getBlockState(placementPos.down()).isReplaceable(context) &&
                 world.getBlockState(placementPos.down()).getBlock()!=ModBlocks.STEEL_PIPE.get()
-                    && facing != Direction.UP && facing != Direction.DOWN){
+                && facing != Direction.UP && facing != Direction.DOWN){
+            OnGround = true;
+        } else if(world.getBlockState(placementPos.down()).getBlockState().getMaterial() == Material.WOOD){
             OnGround = true;
         }
         if (world.getBlockState(placementPos.up()).getBlock()!=Blocks.AIR &&
@@ -81,5 +93,13 @@ public class StraightSteelPipe extends DirectionalBlock {
                 .with(FACING, facing)
                 .with(FLOOR_PLACEMENT, OnGround)
                 .with(ROOF_PLACEMENT, OnRoof);
+    }
+
+    static {
+        PIPE_CONTENTS_EMPTY = SupernovaBlockstates.EMPTY_PIPE;
+        PIPE_CONTENTS_OIL = SupernovaBlockstates.CRUDE_OIL_PIPE;
+        PIPE_CONTENTS_LAVA = SupernovaBlockstates.LAVA_PIPE;
+        PIPE_CONTENTS_SALTWATER = SupernovaBlockstates.SALT_WATER_PIPE;
+        PIPE_CONTENTS_WATER = SupernovaBlockstates.WATER_PIPE;
     }
 }

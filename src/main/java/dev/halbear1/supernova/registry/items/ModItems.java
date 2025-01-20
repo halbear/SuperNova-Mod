@@ -113,6 +113,8 @@ public class ModItems {
             new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
     public static final RegistryObject<Item> CRUDE_OIL_BUCKET = ITEMS.register("crude_oil_bucket",()-> new BucketItem(()-> ModFluids.CRUDE_OIL_FLUID.get(),
             new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
+    public static final RegistryObject<Item> REFINED_OIL_BUCKET = ITEMS.register("refined_oil_bucket",()-> new BucketItem(()-> ModFluids.REFINED_OIL_FLUID.get(),
+            new Item.Properties().maxStackSize(1).group(ItemGroups.SUPERNOVA_ITEMS_TAB)));
 
     //music disks
     public static final RegistryObject<Item> ASTRAL_NIGHTMARE = ITEMS.register("astral_nightmare_md",
