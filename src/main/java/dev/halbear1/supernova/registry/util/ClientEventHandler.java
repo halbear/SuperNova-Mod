@@ -68,6 +68,9 @@ public class ClientEventHandler {
         RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_FLUID.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_FLOWING.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.SALT_WATER_BLOCK.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.KEROSENE_FLUID.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.KEROSENE_FLOWING.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.KEROSENE_BLOCK.get(), RenderType.getTranslucent());
 
         /*SetCollectionRenderType(RenderType.getCutoutMipped(), // Cutout Mipped: Cutout but with mipmapping. Textures from far away are simplified for performance.
                 //blocks here

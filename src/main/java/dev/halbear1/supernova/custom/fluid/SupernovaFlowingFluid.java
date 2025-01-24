@@ -100,7 +100,7 @@ public abstract class SupernovaFlowingFluid extends FlowingFluid {
     }
 
 
-    protected SupernovaFluidAttributes createFluidAttributes() {
+    protected FluidAttributes createAttributes() {
         return this.FluidBuilder.build(this);
     }
 

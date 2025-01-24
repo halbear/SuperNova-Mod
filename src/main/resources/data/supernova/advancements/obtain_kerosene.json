@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "supernova:kerosene_bucket"
+    },
+    "title": "This looks... delicious, dangerously, explosively, delicious.",
+    "description": "Refine Crude Oil into Kerosene",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supernova:obtain_oil",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernova:kerosene_bucket"
+          }
+        ]
+      }
+    }
+  }
+}

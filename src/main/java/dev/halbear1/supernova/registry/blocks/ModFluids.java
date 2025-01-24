@@ -29,6 +29,8 @@ public class ModFluids {
     public static  final ResourceLocation REFINED_OIL_STILL_RL = new ResourceLocation("supernova:block/refined_oil_still");
     public static  final ResourceLocation REFINED_OIL_FLOW_RL = new ResourceLocation("supernova:block/refined_oil_flowing");
     public static  final ResourceLocation REFINED_OIL_OVERLAY_RL = new ResourceLocation("supernova:block/refined_oil_overlay");
+    public static  final ResourceLocation KEROSENE_STILL_RL = new ResourceLocation("supernova:block/kerosene_still");
+    public static  final ResourceLocation KEROSENE_FLOW_RL = new ResourceLocation("supernova:block/kerosene_flowing");
 
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, SuperNova.MOD_ID);
 
@@ -55,7 +57,7 @@ public class ModFluids {
 
     public static final SupernovaFlowingFluid.Properties CRUDE_OIL_PROPERTIES = new SupernovaFlowingFluid.Properties(
             () -> CRUDE_OIL_FLUID.get(), () -> CRUDE_OIL_FLOWING.get(), SupernovaFluidAttributes.builder(CRUDE_OIL_STILL_RL, CRUDE_OIL_FLOW_RL)
-            .density(30).viscosity(30).sound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE).overlay(CRUDE_OIL_OVERLAY_RL).color(0x00FFFFFF)).tickRate(20).slopeFindDistance(4).levelDecreasePerBlock(2)
+            .density(30).viscosity(30).sound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE).overlay(CRUDE_OIL_OVERLAY_RL).color(0x00FFFFFF)).tickRate(7).slopeFindDistance(4).levelDecreasePerBlock(2)
             .block(() -> ModFluids.CRUDE_OIL_BLOCK.get()).bucket(() -> ModItems.CRUDE_OIL_BUCKET.get());
 
     public static final RegistryObject<FlammableFluid> CRUDE_OIL_BLOCK = ModBlocks.BLOCKS.register("crude_oil",
@@ -70,11 +72,25 @@ public class ModFluids {
 
     public static final SupernovaFlowingFluid.Properties REFINED_OIL_PROPERTIES = new SupernovaFlowingFluid.Properties(
             () -> REFINED_OIL_FLUID.get(), () -> REFINED_OIL_FLOWING.get(), SupernovaFluidAttributes.builder(REFINED_OIL_STILL_RL, REFINED_OIL_FLOW_RL)
-            .density(30).viscosity(30).sound(SoundEvents.BLOCK_HONEY_BLOCK_PLACE, SoundEvents.ITEM_BOTTLE_FILL).overlay(REFINED_OIL_OVERLAY_RL).color(0x00FFFFFF)).tickRate(25).slopeFindDistance(4).levelDecreasePerBlock(2)
+            .density(30).viscosity(30).sound(SoundEvents.ITEM_BOTTLE_FILL).overlay(REFINED_OIL_OVERLAY_RL).color(0x00FFFFFF)).tickRate(20).slopeFindDistance(4).levelDecreasePerBlock(2)
             .block(() -> ModFluids.REFINED_OIL_BLOCK.get()).bucket(() -> ModItems.REFINED_OIL_BUCKET.get());
 
     public static final RegistryObject<FlammableFluid> REFINED_OIL_BLOCK = ModBlocks.BLOCKS.register("refined_oil",
             () -> new FlammableFluid(() -> ModFluids.REFINED_OIL_FLUID.get(), AbstractBlock.Properties.create(Material.WATER).tickRandomly()
                     .doesNotBlockMovement().hardnessAndResistance(100f).noDrops()));
 
+    //Kerosene
+    public static final RegistryObject<SupernovaFlowingFluid> KEROSENE_FLUID = FLUIDS.register("kerosene_fluid",
+            () -> new SupernovaFlowingFluid.Source(ModFluids.KEROSENE_PROPERTIES));
+    public static final RegistryObject<SupernovaFlowingFluid> KEROSENE_FLOWING = FLUIDS.register("kerosene_flowing",
+            () -> new SupernovaFlowingFluid.Flowing(ModFluids.KEROSENE_PROPERTIES));
+
+    public static final SupernovaFlowingFluid.Properties KEROSENE_PROPERTIES = new SupernovaFlowingFluid.Properties(
+            () -> KEROSENE_FLUID.get(), () -> KEROSENE_FLOWING.get(), SupernovaFluidAttributes.builder(KEROSENE_STILL_RL, KEROSENE_FLOW_RL)
+            .density(30).viscosity(10).sound(SoundEvents.ITEM_BOTTLE_FILL).overlay(REFINED_OIL_OVERLAY_RL).color(0xeeFFFFFF)).tickRate(6).slopeFindDistance(5).levelDecreasePerBlock(1)
+            .block(() -> ModFluids.KEROSENE_BLOCK.get()).bucket(() -> ModItems.KEROSENE_BUCKET.get());
+
+    public static final RegistryObject<FlammableFluid> KEROSENE_BLOCK = ModBlocks.BLOCKS.register("kerosene",
+            () -> new FlammableFluid(() -> ModFluids.KEROSENE_FLUID.get(), AbstractBlock.Properties.create(Material.WATER).tickRandomly()
+                    .doesNotBlockMovement().hardnessAndResistance(100f).noDrops()));
 }
